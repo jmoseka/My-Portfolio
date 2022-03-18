@@ -15,6 +15,10 @@
 - Languages: HTML, CSS
 - Technologies used: Html-Css Linters, Node Modules
 
+## Demo
+
+<img src="portfolio.gif" alt="portfolio gif">
+
 ## Getting Started
 
 To get a local copy up, fork the project and clone to your local repository.
