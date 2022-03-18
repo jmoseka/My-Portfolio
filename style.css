@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
+
+:root {
+  --black: #1c1a19;
+  --dark-gray: #3c3a39;
+  --orange: #ff6b00;
+  --light: #fff5e1;
+}
+
+body {
+  background-color: var(--black);
+  margin: 0;
+  width: 100%;
+  min-width: 395px;
+}
+
+.appBar {
+  height: 10vh;
+  background-color: var(--dark-gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appBar a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-icon {
+  width: 24px;
+  margin-right: 30px;
+}
+
+.logo-text {
+  width: 250px;
+  font-size: 3.5vh;
+  color: white;
+  margin-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.home :hover {
+  color: var(--orange);
+}
+
+.section-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 590px;
+  margin-left: 24px;
+  background-image: url("images/Group.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.heading {
+  /* Primary Text */
+
+  margin-top: 120px;
+  color: var(--orange);
+  font-family: "Crete Round", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10vh;
+  margin-bottom: 0;
+
+  /* or 114% */
+
+  letter-spacing: 0.37px;
+}
+
+.sub-heading {
+  margin: 0;
+  color: var(--light);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vh;
+
+  /* or 133% */
+}
+
+.description {
+  height: 123px;
+  margin-top: 12px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-social-media {
+  margin-left: 5px;
+  padding: 0;
+}
+
+.links {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.links li {
+  margin: 0;
+}
+
+.links li a {
+  margin-right: 30px;
+}
+
+/* icon hovers */
+.icon-hover :hover {
+  background-color: var(--orange);
+}
+
+/* media queries */
+@media (max-width: 375px) {
+  body {
+    min-width: 375px;
+  }
+
+  .appBar {
+    height: 92px;
+  }
+
+  #menu-icon {
+    width: 18px;
+    right: 23px;
+    margin-right: 20px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    margin-left: 12px;
+  }
+
+  .heading {
+    font-size: 56px;
+    line-height: 64px;
+    width: 327px;
+  }
+
+  .sub-heading {
+    margin-top: 12px;
+    height: 27px;
+    font-weight: 700;
+    font-size: 24px;
+
+    /* or 133% */
+  }
+
+  .section-headline {
+    background-image: url("images/Group.png");
+    background-repeat: no-repeat;
+    background-position: 100% 115%;
+  }
+
+  .links li a {
+    margin-right: 30px;
+  }
+
+  .description {
+    width: 327px;
+    height: 123px;
+  }
+}
