@@ -15,12 +15,12 @@ body {
 }
 
 .appBar {
-  height: 17vh;
+  height: 10vh;
   background-color: var(--dark-gray);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .appBar a {
@@ -31,17 +31,15 @@ body {
 
 #menu-icon {
   width: 24px;
-  right: 25px;
-  margin-right: 25px;
-  margin-bottom: 25px;
+  margin-right: 30px;
 }
 
 .logo-text {
   width: 250px;
   font-size: 3.5vh;
   color: white;
-  margin-left: 8%;
-  margin-bottom: 20px;
+  margin-left: 30px;
+
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -128,13 +126,11 @@ body {
     width: 18px;
     right: 23px;
     margin-right: 20px;
-    margin-bottom: 20px;
   }
 
   .logo-text {
     font-size: 18px;
     margin-left: 12px;
-    margin-bottom: 20px;
   }
 
   .heading {
