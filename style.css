@@ -12,15 +12,6 @@ body {
   margin: 0;
   width: 100%;
   min-width: 395px;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  width: 95%;
-  margin: 0 auto;
-  background-color: black;
-  align-self: center;
 }
 
 .appBar {
@@ -51,8 +42,12 @@ main {
 }
 
 .section-headline {
+  height: 100vh;
   margin-left: 24px;
-  position: absolute;
+  background-image: url("images/Group.png");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-position: 100% 120%;
 }
 
 .heading {
@@ -73,13 +68,11 @@ main {
 }
 
 .sub-heading {
-  margin-top: 12px;
-  height: 27px;
   color: var(--light);
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 5vh;
   line-height: 32px;
 
   /* or 133% */
@@ -142,6 +135,21 @@ main {
     font-size: 56px;
     line-height: 64px;
     width: 327px;
+  }
+
+  .sub-heading {
+    margin-top: 12px;
+    height: 27px;
+    font-weight: 700;
+
+    /* or 133% */
+  }
+
+  .section-headline {
+    background-image: url("images/Group.png");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position: 100% 110%;
   }
 
   .links li a {
