@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
+=======
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+>>>>>>> b09e526b41717dc51e743126f3926f1aa5bdcfb6
 
 :root {
   --black: #1c1a19;
@@ -9,9 +13,21 @@
 
 body {
   background-color: var(--black);
+<<<<<<< HEAD
   margin: 0;
   width: 100%;
   min-width: 395px;
+=======
+  display: flex;
+  flex-direction: column;
+}
+main {
+  width: 95%;
+  margin: 0 auto
+  background-color: black;
+
+  align-self: center;
+>>>>>>> b09e526b41717dc51e743126f3926f1aa5bdcfb6
 }
 
 .appBar {
