@@ -1,80 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-/* Declare common styles for project */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
 
 :root {
   --black: #1c1a19;
   --dark-gray: #3c3a39;
   --orange: #ff6b00;
   --light: #fff5e1;
-  --poppins: font-family: 'Poppins', sans-serif;
-  --Roboto: font-family: 'Roboto', sans-serif;
 }
+
 body {
   background-color: var(--black);
-  display: flex;
-  flex-direction: column;
-}
-main {
-  width: 95%;
-
-  margin: 0 auto;
-
-  background-color: black;
-
-  align-self: center;
+  margin: 0;
+  width: 100%;
+  min-width: 395px;
 }
 
 .appBar {
+  height: 17vh;
   background-color: var(--dark-gray);
-  width: 100%;
-  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 #menu-icon {
-  width: 18px;
-  right: 23px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  width: 24px;
+  right: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
 }
+
 .logo-text {
-  font-size: 20px;
+  font-size: 3.5vh;
   color: white;
-  margin-left: 20px;
+  margin-left: 4%;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
-.headline {
-  margin-left: 15px;
+
+.section-headline {
+  margin-left: 24px;
+  position: absolute;
 }
+
 .heading {
+  /* Primary Text */
+  height: 124px;
   margin-top: 120px;
   color: var(--orange);
-  font-size: 11vh;
-  margin-bottom: 0px;
-}
-.sub-heading {
-  color: var(--light);
-  font-size: 4vh;
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-}
-.description {
-  color: white;
-  
-  height: 123px;
-  font-size: 2.7vh;
-  font-family: 'Poppins';
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
- 
-}
-.social-media {
-  display: flex;
-  background-color: darkblue;
-  list-style: none;
-  justify-content: space-between;
+  font-size: 10vh;
+  line-height: 64px;
 
+  /* or 114% */
+
+  letter-spacing: 0.37px;
+  margin-bottom: 0;
+}
+
+.sub-heading {
+  margin-top: 12px;
+  height: 27px;
+  color: var(--light);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  /* or 133% */
+}
+
+.description {
+  height: 123px;
+  margin-top: 12px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.section-social-media {
+  margin-left: 5px;
+  padding: 0;
+}
+
+.links {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  list-style: none;
+}
+
+.links li {
+  margin: 0;
+}
+
+.links li a {
+  margin-right: 30px;
+}
+
+@media (max-width: 395px) {
+  body {
+    max-width: 395px;
+  }
+
+  .appBar {
+    height: 92px;
+  }
+
+  #menu-icon {
+    width: 18px;
+    right: 23px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+    margin-left: 12px;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 56px;
+    line-height: 64px;
+    width: 327px;
+  }
+
+  .links li a {
+    margin-right: 30px;
+  }
+
+  .description {
+    width: 327px;
+    height: 123px;
+  }
 }
