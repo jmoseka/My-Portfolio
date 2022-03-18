@@ -44,6 +44,7 @@ body {
   font-weight: 700;
   line-height: 24px;
 }
+
 .home :hover {
   color: var(--orange);
 }
@@ -120,12 +121,12 @@ body {
   margin-right: 30px;
 }
 
-/*icon hovers*/
+/* icon hovers */
 .icon-hover :hover {
   background-color: var(--orange);
 }
 
-/*media queries*/
+/* media queries */
 @media (max-width: 395px) {
   body {
     max-width: 395px;
