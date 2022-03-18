@@ -39,7 +39,6 @@ body {
   font-size: 3.5vh;
   color: white;
   margin-left: 30px;
-
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -47,7 +46,7 @@ body {
 }
 
 .section-headline {
-  height: 100vh;
+  height: 590px;
   margin-left: 24px;
   background-image: url("images/Group.png");
   background-repeat: no-repeat;
@@ -64,14 +63,15 @@ body {
   font-weight: 400;
   font-size: 10vh;
   line-height: 64px;
+  margin-bottom: 0;
 
   /* or 114% */
 
   letter-spacing: 0.37px;
-  margin-bottom: 0;
 }
 
 .sub-heading {
+  margin: 0;
   color: var(--light);
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -150,7 +150,7 @@ body {
   .section-headline {
     background-image: url("images/Group.png");
     background-repeat: no-repeat;
-    background-position: 100% 110%;
+    background-position: 100% 115%;
   }
 
   .links li a {
