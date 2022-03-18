@@ -53,8 +53,7 @@ body {
   margin-left: 24px;
   background-image: url("images/Group.png");
   background-repeat: no-repeat;
-  background-position: fixed;
-  background-position: 100% 120%;
+  background-position: right bottom;
 }
 
 .heading {
@@ -155,7 +154,6 @@ body {
   .section-headline {
     background-image: url("images/Group.png");
     background-repeat: no-repeat;
-    background-position: fixed;
     background-position: 100% 110%;
   }
 
