@@ -46,6 +46,9 @@ body {
 }
 
 .section-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   height: 590px;
   margin-left: 24px;
   background-image: url("images/Group.png");
