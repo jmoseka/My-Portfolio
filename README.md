@@ -17,7 +17,7 @@
 
 ## Demo
 
-<img src="portfolio.gif" alt="portfolio gif">
+<img src="images/portfolio.gif" alt="portfolio gif">
 
 ## Getting Started
 
