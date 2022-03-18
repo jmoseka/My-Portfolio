@@ -62,14 +62,13 @@ body {
 
 .heading {
   /* Primary Text */
-  height: 124px;
+
   margin-top: 120px;
   color: var(--orange);
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10vh;
-  line-height: 64px;
   margin-bottom: 0;
 
   /* or 114% */
@@ -83,8 +82,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 5vh;
-  line-height: 32px;
+  font-size: 4vh;
 
   /* or 133% */
 }
@@ -127,9 +125,9 @@ body {
 }
 
 /* media queries */
-@media (max-width: 395px) {
+@media (max-width: 375px) {
   body {
-    max-width: 395px;
+    min-width: 375px;
   }
 
   .appBar {
@@ -157,6 +155,7 @@ body {
     margin-top: 12px;
     height: 27px;
     font-weight: 700;
+    font-size: 24px;
 
     /* or 133% */
   }
