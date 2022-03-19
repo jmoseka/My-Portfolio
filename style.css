@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap");
+
 :root {
   --black: #1c1a19;
   --dark-gray: #3c3a39;
@@ -16,6 +17,7 @@ body {
 a {
   text-decoration: none;
 }
+
 .front-screen {
   margin: 0;
   padding: 0;
@@ -181,16 +183,17 @@ a {
   }
 }
 
-/*WORK AND ABOUT ME SECTION CSS*/
+/* WORK AND ABOUT ME SECTION CSS */
 .heading-work {
   margin: 120px 24px 0 24px;
   width: 327px;
   height: 83px;
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
+
   /* or 130% */
   display: flex;
   align-items: center;
@@ -205,16 +208,17 @@ a {
 }
 
 .feature-post {
-  margin: 0px 24px 0px 24px;
+  margin: 0 24px 0 24px;
 }
 
 .feature-title {
-  margin: 24px 0px;
-  font-family: "Crete Round";
+  margin: 24px 0;
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 
   display: flex;
@@ -226,14 +230,16 @@ a {
 }
 
 .feature-desc {
-  margin: 12px 0px 12px 0px;
+  margin: 12px 0 12px 0;
+
   /* Theme 3 / Body Reguler 2 */
 
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   /* or 150% */
 
   /* Neutrals/N900 */
@@ -245,71 +251,79 @@ a {
   width: 124px;
   text-align: center;
   margin-bottom: 36px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
   /* identical to box height, or 141% */
   letter-spacing: 0.03em;
   background: var(--orange);
+  padding: 8px;
 }
+
 .see-project {
-  color: #ffffff;
+  color: #fff;
 }
 
 .card-tags {
   margin: 12px 0;
 }
+
 .card-tags ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
+
 .card-tags ul li {
   border: 1px solid #8993a4;
   margin-right: 12px;
   padding: 10px 12px;
-
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N900 */
   color: #091e42;
 }
 
-/*PROJECT GRID CARDS*/
+/* PROJECT GRID CARDS */
 .card {
   width: 327px;
   height: 386px;
-  margin: 0px 24px 0px 24px;
+  margin: 0 24px 0 24px;
   background-image: url("images/proj-img.png");
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: end;
-  color: #ffffff;
+  color: #fff;
 }
+
 .card-block {
-  margin: 0px 16px 12px 16px;
+  margin: 0 16px 12px 16px;
 }
 
 .card-title {
   width: 295px;
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 }
 
 .card-desc {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -326,18 +340,22 @@ a {
   width: 100%;
   background: var(--orange);
   text-align: center;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  padding: 8px 0 8px 0;
 }
 
-/*ABOUT ME STYLING*/
+/* ABOUT ME STYLING */
 .section-about-me {
   margin-top: 120px;
   background-color: var(--black);
   position: absolute;
+  background-image: url("images/about-me-img.png");
+  background-repeat: no-repeat;
+  background-position: 100% 15%;
 }
 
 .about-me-page {
@@ -355,11 +373,12 @@ a {
 }
 
 .about-me-heading {
-  font-family: "Crete Round";
+  font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
   line-height: 88px;
+
   /* or 122% */
 
   letter-spacing: 0.37px;
@@ -371,11 +390,12 @@ a {
 }
 
 .about-me-desc {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   /* or 150% */
 
   /* Neutrals/N20 */
@@ -386,62 +406,65 @@ a {
 #resume {
   color: white;
 }
+
 .resume-btn {
   width: 161px;
   height: 48px;
   margin-bottom: 36px;
   margin-top: 24px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
   /* identical to box height, or 141% */
   letter-spacing: 0.03em;
   background: var(--orange);
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about-me-line {
-  margin-top: 121px;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   width: 327px;
-  margin: 0px 24px 0 24px;
+  margin: 140px 24px 0 24px;
 }
 
 .listing {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*the icons make the element too pushed on the left hence the margin right*/
+
+  /* the icons make the element too pushed on the left hence the margin right */
   margin-right: 34px;
   margin-bottom: 131px;
 }
 
 .list-title {
   margin-top: 136.73px;
-  font-family: "InaiMathi";
+  font-family: "InaiMathi", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 
-  color: #ffffff;
+  color: #fff;
 }
 
-.list {
+#list {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: #fff;
 }
-.list li {
-  font-family: "Inter";
+
+#list li {
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -454,19 +477,100 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
 .contact-text {
   text-align: center;
   width: 327px;
   margin-top: 130px;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 
   /* Neutrals/N800 */
 
   color: #172b4d;
   display: flex;
+}
+
+form {
+  margin-top: 70px;
+  background-color: white;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 327px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 14px 0 14px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#comments {
+  max-width: 327px;
+  max-height: 114px;
+  min-width: 327px;
+  min-height: 114px;
+  border: none;
+  background-color: #fbf8f7;
+  margin-top: 39px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  /* or 160% */
+
+  /* Theme 3 / Neutral 2 */
+
+  color: #3c3a39;
+}
+
+#submit {
+  text-align: center;
+  margin-top: 24px;
+  color: white;
+}
+
+#btn-touch {
+  color: white;
+}
+
+.submit-button {
+  width: 124px;
+  text-align: center;
+  margin-bottom: 36px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+  letter-spacing: 0.03em;
+  background: var(--orange);
+  border: none;
+  padding: 8px;
+}
+
+.end-line {
+  width: 375px;
+  margin-top: 124px;
+  border: 1px solid #dfe1e6;
+}
+
+.section-grey-social-media {
+  margin-top: 25px;
 }
