@@ -273,22 +273,6 @@ a {
   padding: 0;
 }
 
-.card-tags ul li {
-  border: 1px solid #8993a4;
-  margin-right: 12px;
-  padding: 10px 12px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  background: rgba(255, 255, 255, 0.24);
-
-  /* identical to box height, or 133% */
-
-  color: #091e42;
-}
-
 /* PROJECT GRID AND CARDS */
 #project-grid {
   display: grid;
@@ -472,13 +456,6 @@ a {
   color: #fff;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .list li {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -486,6 +463,13 @@ a {
   font-size: 22px;
   line-height: 43px;
   color: #fff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-info {
@@ -511,6 +495,22 @@ a {
 
   color: #172b4d;
   display: flex;
+}
+
+.card-tags ul li {
+  border: 1px solid #8993a4;
+  margin-right: 12px;
+  padding: 10px 12px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
+
+  /* identical to box height, or 133% */
+
+  color: #091e42;
 }
 
 form {
