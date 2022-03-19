@@ -586,3 +586,8 @@ input {
   background: #0d151e;
   border-radius: 10px;
 }
+
+.shapes {
+  width: 18px;
+  height: 18px;
+}
