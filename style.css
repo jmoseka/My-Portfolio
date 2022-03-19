@@ -265,6 +265,7 @@ a {
 
 .card-tags {
   margin: 12px 0;
+  background: none;
 }
 
 .card-tags ul {
@@ -272,6 +273,22 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.card-tags ul :hover {
+  color: var(--orange);
+  border-color: var(--orange);
+  background: #fff5e1;
+}
+.card-tags ul :enabled {
+  border-color: var(--orange);
+  color: white;
+  background-color: var(--orange);
+}
+.card-tags ul :active {
+  border-color: var(--orange);
+  color: white;
+  background-color: var(--orange);
 }
 
 /* PROJECT GRID AND CARDS */
