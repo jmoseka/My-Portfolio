@@ -198,6 +198,47 @@ body {
 }
 
 .horizontal-line {
-  margin: 24px 24px 0px 24px;
+  margin: 24px 24px 80px 24px;
   border: 1px solid #212121;
+}
+
+.feature-post {
+  margin: 0px 24px 0px 24px;
+}
+
+.feature-title {
+  margin: 24px 0px;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N900 */
+
+  color: #091e42;
+}
+
+.feature-desc {
+  margin: 12px 0px 12px 0px;
+  /* Theme 3 / Body Reguler 2 */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Neutrals/N900 */
+
+  color: #091e42;
+}
+
+.card-tags {
+  margin: 12px 0;
 }
