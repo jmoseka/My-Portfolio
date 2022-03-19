@@ -231,9 +231,6 @@ a {
 
 .feature-desc {
   margin: 12px 0 12px 0;
-
-  /* Theme 3 / Body Reguler 2 */
-
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -241,8 +238,6 @@ a {
   line-height: 24px;
 
   /* or 150% */
-
-  /* Neutrals/N900 */
 
   color: #091e42;
 }
@@ -287,14 +282,18 @@ a {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  background: rgba(255, 255, 255, 0.24);
 
   /* identical to box height, or 133% */
 
-  /* Neutrals/N900 */
   color: #091e42;
 }
 
-/* PROJECT GRID CARDS */
+/* PROJECT GRID AND CARDS */
+#project-grid {
+  display: grid;
+}
+
 .card {
   width: 327px;
   height: 386px;
@@ -322,12 +321,13 @@ a {
   /* or 138% */
 }
 
-.card-desc {
+.card-post {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 12px;
 }
 
 #html,
@@ -515,6 +515,7 @@ input {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  padding-left: 15px;
 }
 
 #comments {
@@ -529,12 +530,11 @@ input {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 24px;
 
   /* or 160% */
-
-  /* Theme 3 / Neutral 2 */
-
+  line-height: 24px;
+  padding-left: 20px;
+  padding-top: 20px;
   color: #3c3a39;
 }
 
