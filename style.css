@@ -239,6 +239,44 @@ body {
   color: #091e42;
 }
 
+.feature-btn {
+  width: 124px;
+  text-align: center;
+
+  background: #ff6b00;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
 .card-tags {
   margin: 12px 0;
+}
+.card-tags ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.card-tags ul li {
+  border: 1px solid #8993a4;
+  margin-right: 12px;
+  padding: 10px 12px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  /* identical to box height, or 133% */
+
+  /* Neutrals/N900 */
+  color: #091e42;
 }
