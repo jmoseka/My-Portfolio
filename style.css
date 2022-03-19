@@ -365,6 +365,8 @@ a {
 
 /* ABOUT ME STYLING */
 .section-about-me {
+  min-width: 375px;
+  max-width: 375px;
   margin-top: 120px;
   background-color: var(--black);
   position: absolute;
