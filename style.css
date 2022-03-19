@@ -280,12 +280,14 @@ a {
   border-color: var(--orange);
   background: #fff5e1;
 }
-.card-tags ul :enabled {
+
+.card-tags ul :active {
   border-color: var(--orange);
   color: white;
   background-color: var(--orange);
 }
-.card-tags ul :active {
+
+.card-tags ul :enabled {
   border-color: var(--orange);
   color: white;
   background-color: var(--orange);
