@@ -578,3 +578,11 @@ input {
 .section-grey-social-media {
   margin-top: 25px;
 }
+
+.line-thick {
+  margin: 20px 0px 15px 0px;
+  width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+}
