@@ -460,7 +460,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
 }
 
 #list li {
@@ -469,6 +468,7 @@ a {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
+  color: #fff;
 }
 
 .contact-info {
