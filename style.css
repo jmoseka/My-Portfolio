@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap");
 :root {
   --black: #1c1a19;
   --dark-gray: #3c3a39;
@@ -12,6 +11,10 @@ body {
   width: 100%;
   min-width: 375px;
   max-width: 375px;
+}
+
+a {
+  text-decoration: none;
 }
 .front-screen {
   margin: 0;
@@ -188,7 +191,6 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-
   /* or 130% */
   display: flex;
   align-items: center;
@@ -242,9 +244,7 @@ body {
 .feature-btn {
   width: 124px;
   text-align: center;
-
-  background: #ff6b00;
-
+  margin-bottom: 36px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
@@ -252,7 +252,9 @@ body {
   line-height: 24px;
   /* identical to box height, or 141% */
   letter-spacing: 0.03em;
-
+  background: var(--orange);
+}
+.see-project {
   color: #ffffff;
 }
 
@@ -279,4 +281,192 @@ body {
 
   /* Neutrals/N900 */
   color: #091e42;
+}
+
+/*PROJECT GRID CARDS*/
+.card {
+  width: 327px;
+  height: 386px;
+  margin: 0px 24px 0px 24px;
+  background-image: url("images/proj-img.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: #ffffff;
+}
+.card-block {
+  margin: 0px 16px 12px 16px;
+}
+
+.card-title {
+  width: 295px;
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+}
+
+.card-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#html,
+#css,
+#ruby {
+  color: white;
+}
+
+.card-btn {
+  width: 100%;
+  background: var(--orange);
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+/*ABOUT ME STYLING*/
+.section-about-me {
+  margin-top: 120px;
+  background-color: var(--black);
+  position: absolute;
+}
+
+.about-me-page {
+  background-color: var(--black);
+  position: absolute;
+  width: 375px;
+}
+
+.aboutme-block {
+  margin: 0 auto;
+  bottom: 0%;
+  margin-top: 120px;
+  height: 400px;
+  width: 327px;
+}
+
+.about-me-heading {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  /* or 122% */
+
+  letter-spacing: 0.37px;
+  margin-bottom: 24px;
+
+  /* Theme 3 / Primary 1 */
+
+  color: var(--orange);
+}
+
+.about-me-desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Neutrals/N20 */
+
+  color: #f4f5f7;
+}
+
+#resume {
+  color: white;
+}
+.resume-btn {
+  width: 161px;
+  height: 48px;
+  margin-bottom: 36px;
+  margin-top: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  letter-spacing: 0.03em;
+  background: var(--orange);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-line {
+  margin-top: 121px;
+  border: 1px solid #ffffff;
+  width: 327px;
+  margin: 0px 24px 0 24px;
+}
+
+.listing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*the icons make the element too pushed on the left hence the margin right*/
+  margin-right: 34px;
+  margin-bottom: 131px;
+}
+
+.list-title {
+  margin-top: 136.73px;
+  font-family: "InaiMathi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+
+  color: #ffffff;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.list li {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+}
+
+.contact-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-text {
+  text-align: center;
+  width: 327px;
+  margin-top: 130px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  /* or 138% */
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+  display: flex;
 }
