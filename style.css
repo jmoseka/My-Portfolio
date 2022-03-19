@@ -472,14 +472,14 @@ a {
   color: #fff;
 }
 
-#list {
+.list {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#list li {
+.list li {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
