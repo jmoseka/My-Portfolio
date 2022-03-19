@@ -252,11 +252,15 @@ a {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  background: var(--orange);
 
   /* identical to box height, or 141% */
   letter-spacing: 0.03em;
-  background: var(--orange);
   padding: 8px;
+}
+
+.feature-btn :hover {
+  color: var(--orange);
 }
 
 .see-project {
@@ -410,11 +414,8 @@ a {
   color: #f4f5f7;
 }
 
-#resume {
-  color: white;
-}
-
 .resume-btn {
+  color: white;
   width: 161px;
   height: 48px;
   margin-bottom: 36px;
@@ -609,4 +610,27 @@ input {
 .shapes {
   width: 18px;
   height: 18px;
+}
+
+.card-btn:hover {
+  color: orange;
+}
+
+#btn-feature:hover {
+  background-color: #fff5e1;
+}
+
+.see-project:hover {
+  color: orange;
+  background-color: #fff5e1;
+}
+
+#resume:hover {
+  color: var(--orange);
+  background-color: #fff5e1;
+}
+
+#submit:hover {
+  color: var(--orange);
+  background-color: #fff5e1;
 }
