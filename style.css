@@ -580,7 +580,7 @@ input {
 }
 
 .line-thick {
-  margin: 20px 0px 15px 0px;
+  margin: 20px 0 15px 0;
   width: 134px;
   height: 5px;
   background: #0d151e;
