@@ -17,7 +17,7 @@
 
 ## Demo
 
-<img src="images/demo-project.gif" alt="portfolio gif">
+<img src="images/demo-work-aboutme.gif" alt="portfolio gif">
 
 ## Getting Started
 
