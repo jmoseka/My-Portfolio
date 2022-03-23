@@ -265,6 +265,7 @@ a {
 
 .see-project {
   color: #fff;
+  background-color: #091e42;
 }
 
 .card-tags {
@@ -314,10 +315,6 @@ a {
   color: #fff;
 }
 
-.card-block {
-  margin: 0 16px 12px 16px;
-}
-
 .card-title {
   width: 295px;
   font-family: "Crete Round", serif;
@@ -347,14 +344,13 @@ a {
 
 .card-btn {
   width: 100%;
-  background: var(--orange);
+
   text-align: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 24px;
-  padding: 8px 0 8px 0;
+  background-color: #091e42;
 }
 
 /* ABOUT ME STYLING */
@@ -479,31 +475,6 @@ a {
   align-items: center;
 }
 
-.contact-info {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact-text {
-  text-align: center;
-  width: 327px;
-  margin-top: 130px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-
-  /* or 138% */
-
-  /* Neutrals/N800 */
-
-  color: #172b4d;
-  display: flex;
-}
-
 .card-tags ul li {
   border: 1px solid #8993a4;
   margin-right: 12px;
@@ -518,75 +489,6 @@ a {
   /* identical to box height, or 133% */
 
   color: #091e42;
-}
-
-form {
-  margin-top: 70px;
-  background-color: white;
-  width: 327px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-input {
-  width: 327px;
-  border: none;
-  border-bottom: 1px solid #dbd8d7;
-  padding: 14px 0 14px 0;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  padding-left: 15px;
-}
-
-#comments {
-  max-width: 327px;
-  max-height: 114px;
-  min-width: 327px;
-  min-height: 114px;
-  border: none;
-  background-color: #fbf8f7;
-  margin-top: 39px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-
-  /* or 160% */
-  line-height: 24px;
-  padding-left: 20px;
-  padding-top: 20px;
-  color: #3c3a39;
-}
-
-#submit {
-  text-align: center;
-  margin-top: 24px;
-  color: white;
-}
-
-#btn-touch {
-  color: white;
-}
-
-.submit-button {
-  width: 124px;
-  text-align: center;
-  margin-bottom: 36px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-
-  /* identical to box height, or 141% */
-  letter-spacing: 0.03em;
-  background: var(--orange);
-  border: none;
-  padding: 8px;
 }
 
 .end-line {
