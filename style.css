@@ -349,7 +349,12 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  background-color: #091e42;
+  background-color: var(--orange);
+  padding: 10px 0 10px  0;
+}
+
+.card-block {
+  padding-left: 16px;
 }
 
 /* ABOUT ME STYLING */
@@ -609,10 +614,12 @@ input {
 
 .card-btn:hover {
   color: orange;
+  border: 1px solid var(--orange);
 }
 
 #btn-feature:hover {
   background-color: #fff5e1;
+  border: 1px solid var(--orange);
 }
 
 .see-project:hover {
@@ -623,6 +630,7 @@ input {
 #resume:hover {
   color: var(--orange);
   background-color: #fff5e1;
+  border: 1px solid var(--orange);
 }
 
 #submit:hover {
