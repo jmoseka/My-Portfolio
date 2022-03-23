@@ -280,12 +280,6 @@ a {
   padding: 0;
 }
 
-.card-tags ul :hover {
-  color: var(--orange);
-  border-color: var(--orange);
-  background: #fff5e1;
-}
-
 .card-tags ul :active {
   border-color: var(--orange);
   color: white;
@@ -350,11 +344,11 @@ a {
   font-weight: 700;
   font-size: 17px;
   background-color: var(--orange);
-  padding: 10px 0 10px  0;
+  padding: 10px 0 10px 0;
 }
 
 .card-block {
-  padding-left: 16px;
+  margin: 0 16px 0 16px;
 }
 
 /* ABOUT ME STYLING */
@@ -613,7 +607,7 @@ input {
 }
 
 .card-btn:hover {
-  color: orange;
+  color: var(--orange);
   border: 1px solid var(--orange);
 }
 
@@ -623,7 +617,7 @@ input {
 }
 
 .see-project:hover {
-  color: orange;
+  color: var(--orange);
   background-color: #fff5e1;
 }
 
