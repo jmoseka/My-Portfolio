@@ -344,7 +344,6 @@ a {
 
 .card-btn {
   width: 100%;
-
   text-align: center;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -538,9 +537,6 @@ a {
   color: #172b4d;
   display: flex;
 }
-
-
-
 
 form {
   margin-top: 70px;
