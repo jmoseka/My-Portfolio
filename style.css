@@ -5,6 +5,7 @@
   --dark-gray: #3c3a39;
   --orange: #ff6b00;
   --light: #fff5e1;
+  --blue: #091e42;
 }
 
 body {
@@ -262,7 +263,9 @@ a {
 .feature-btn :hover {
   color: var(--orange);
 }
-
+.feature-btn :enabled {
+  background-color: var(--orange);
+}
 .see-project {
   color: #fff;
   background-color: #091e42;
@@ -486,7 +489,7 @@ a {
 
   /* identical to box height, or 133% */
 
-  color: #091e42;
+  color: var(--blue);
 }
 
 .end-line {
@@ -630,4 +633,8 @@ input {
 #submit:hover {
   color: var(--orange);
   background-color: #fff5e1;
+}
+
+#submit :enabled {
+  background-color: var(--orange);
 }
