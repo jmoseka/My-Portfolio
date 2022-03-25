@@ -5,352 +5,365 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Jamila's Portfolio</title>
   </head>
   <body>
-    <div class="front-screen">
+    <section class="section-nav">
       <header>
-        <nav class="appBar">
-          <a class="home" href="#" target="_blank"
-            ><div class="logo-text">Jamila Moseka</div></a
-          >
-          <a class="icon-hover" href="#" target="_blank"
-            ><img id="menu-icon" src="images/menu1.png" alt="logo"
-          /></a>
-        </nav>
-      </header>
-
-      <section class="section-headline">
-        <h1 class="heading">Hey There. I'm Jamila</h1>
-        <div class="sub-heading">I am a Software Developer</div>
-        <p class="description">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-
-        <div class="section-social-media">
-          <ul class="links">
-            <li>
-              <a href="#" class="icon-hover">
-                <img src="images/github.png" alt="github icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover">
-                <img src="images/linkedin.png" alt="linkedin icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover">
-                <img src="images/peace.png" alt="peace icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover"
-                ><img src="images/twitter.png" alt="twitter icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover"
-                ><img src="images/medium.png" alt="medium icon"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
-
-    <!---WORK AND ABOUT ME SECTION-->
-
-    <section class="section-work">
-      <h2 class="heading-work">My Recent Works</h2>
-      <div class="horizontal-line"></div>
-
-      <div class="feature-post">
-        <img
-          class="feature-img"
-          src="images/feature-img.png"
-          alt="feature image"
-        />
-        <div class="feature-title">Multi-Post Stories</div>
-        <div class="feature-desc">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </div>
-        <div class="card-tags">
+        <!--Navigation Menu-->
+        <nav class="nav-bar">
+          <a class="logo-text">Jamila Moseka</a>
           <ul>
+            <li><a class="nav-links" href="#">Portfolio </a></li>
+            <li><a class="nav-links" href="#">About</a></li>
+            <li><a class="nav-links" href="#">Contact</a></li>
+            <li><img class="email-icon" src="images/Union.png" alt="" /></li>
+          </ul>
+        </nav>
+        <!--Ends-->
+      </header>
+    </section>
+
+    <!--SECTION MAIN - represents the front of the page. It is subdivided into 2 parts-->
+
+    <section class="section-main-heading">
+      <!--Part 1: Icons area-->
+      <ul class="main-social-links">
+        <li>
+          <a href="#" class="icon-hover">
+            <img src="images/github.png" alt="github icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="icon-hover">
+            <img src="images/linkedin.png" alt="linkedin icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="icon-hover">
+            <img src="images/peace.png" alt="peace icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="icon-hover"
+            ><img src="images/twitter.png" alt="twitter icon"
+          /></a>
+        </li>
+        <li>
+          <a href="#" class="icon-hover"
+            ><img src="images/medium.png" alt="medium icon"
+          /></a>
+        </li>
+      </ul>
+
+      <!--Part 2: Main texts block : consits of text block and div background image-->
+      <div class="block">
+        <div class="main-content">
+          <h1 class="main-title">
+            Hey There. <br />
+            I'm Jamila
+          </h1>
+          <h2 class="main-subtitle">I am a Software Developer</h2>
+          <p class="main-desc">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <!--Illustration image-->
+        <div class="main-image"></div>
+      </div>
+    </section>
+
+    <!--END OF MAIN HEADING SECTION-->
+
+    <!--SECTION WORK - It is divided into 3 parts-->
+    <section class="section-work">
+      <!--Part 1 - Headline heading and horizontal line-->
+      <div class="works-headline">
+        <h2 class="works-heading">My Recent Works</h2>
+        <div class="works-line"></div>
+      </div>
+
+      <!--Part 2 - Featured post-->
+      <div class="featured-post">
+        <div class="feature-img-holder">
+          <img
+            id="feature-img"
+            src="images/Img-placeholder.png"
+            alt="feature image"
+          />
+        </div>
+
+        <div class="feature-content">
+          <h3 class="feature-title">Multi-Post Stories</h3>
+          <p class="feature-desc">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+
+          <ul class="card-tags">
             <li><a href="#" id="html">html</a></li>
             <li><a href="#" id="css">css</a></li>
             <li><a href="#" id="bootstrap">bootstrap</a></li>
             <li><a href="#" id="ruby">ruby</a></li>
           </ul>
-        </div>
-        <div id="btn-feature" class="feature-btn">
-          <a href="#">See Project</a>
+
+          <button type="button" id="feature-btn">See Project</button>
         </div>
       </div>
 
-      <!--Project grid-->
-      <div id="project-grid">
-        <div class="card">
-          <div class="card-block">
-            <h3 class="card-title">Professional Art Printing Data</h3>
-            <p class="card-post">
+      <!--Part 3 - Project posts-->
+      <div class="project-grid">
+        <!--First project item that has button 👇-->
+        <div class="project">
+          <img src="images/img-1.png" alt="First project" />
+          <button type="button" id="see-project">See Project</button>
+        </div>
+
+        <!--Other project items-->
+        <div class="project-others">
+          <img
+            src="images/img-2.png"
+            alt="Data dashboard healthcare project image"
+          />
+
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
             </p>
-            <div class="card-tags">
-              <ul>
-                <li><a href="#">html</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">ruby</a></li>
-              </ul>
-            </div>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
           </div>
-          <a class="see-project card-btn">See Project</a>
         </div>
 
-        <div class="card">
-          <div class="card-block">
-            <div class="card-title">Professional Art Printing Data</div>
-            <div class="card-post">
+        <div class="project-others">
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
-            </div>
-            <div class="card-tags">
-              <ul>
-                <li><a href="#">html</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">ruby</a></li>
-              </ul>
-            </div>
+            </p>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
           </div>
-          <a href="#" class="see-project card-btn">See Project</a>
+          <img
+            src="images/img-3.png"
+            alt="Data dashboard healthcare project image"
+          />
         </div>
 
-        <div class="card">
-          <div class="card-block">
-            <div class="card-title">Professional Art Printing Data</div>
-            <div class="card-post">
+        <div class="project-others">
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
-            </div>
-            <div class="card-tags">
-              <ul>
-                <li><a href="#">html</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">ruby</a></li>
-              </ul>
-            </div>
+            </p>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
           </div>
-          <a href="#" class="see-project card-btn">See Project</a>
+          <img
+            src="images/img-4.png"
+            alt="Data dashboard healthcare project image"
+          />
         </div>
 
-        <div class="card">
-          <div class="card-block">
-            <div class="card-title">Professional Art Printing Data</div>
-            <div class="card-post">
+        <div class="project-others">
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
-            </div>
-            <div class="card-tags">
-              <ul>
-                <li><a href="#">html</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">ruby</a></li>
-              </ul>
-            </div>
+            </p>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
           </div>
-          <a href="#" class="see-project card-btn">See Project</a>
+          <img
+            src="images/img-5.png"
+            alt="Data dashboard healthcare project image"
+          />
         </div>
 
-        <div class="card">
-          <div class="card-block">
-            <div class="card-title">Professional Art Printing Data</div>
-            <div class="card-post">
+        <div class="project-others">
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
               A daily selection of privately personalized reads; no accounts or
               sign-ups required. has been the industry's standard
-            </div>
-            <div class="card-tags">
-              <ul>
-                <li><a href="#">html</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">ruby</a></li>
-              </ul>
-            </div>
+            </p>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
           </div>
-          <a href="#" class="see-project card-btn">See Project</a>
-        </div>
-
-        <div class="card">
-          <div class="card-block">
-            <div class="card-title">Professional Art Printing Data</div>
-            <div class="card-post">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </div>
-            <div class="card-tags">
-              <ul>
-                <li><a href="#">html</a></li>
-                <li><a href="#">css</a></li>
-                <li><a href="#">ruby</a></li>
-              </ul>
-            </div>
-          </div>
-          <a href="#" class="see-project card-btn">See Project</a>
+          <img
+            src="images/img-6.png"
+            alt="Data dashboard healthcare project image"
+          />
         </div>
       </div>
     </section>
 
     <!--SECTION ABOUT ME-->
     <section class="section-about-me">
-      <div class="aboutme-block">
-        <h2 class="about-me-heading">About me</h2>
-        <p class="about-me-desc">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <a href="#" class="resume-btn" id="resume">Get My Resume</a>
+      <!--The About me block consists of text and illustration image-->
+
+      <div class="about-me-block">
+        <div class="about-me-content">
+          <h2 class="about-me-title">About me</h2>
+          <p class="about-me-text">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <button type="button" id="resume-btn">Get My Resume</button>
+        </div>
+
+        <div class="about-me-img"></div>
       </div>
+
+      <!--Line divide to end about me-->
       <div class="about-me-line"></div>
 
-      <!--Line break-->
-      <div class="listing">
-        <div class="list-title">
-          <img
-            class="shapes"
-            src="images/orange-diamond.png"
-            alt="orange diamond"
-          />
-          Languages
+      <div class="list-item">
+        <div>
+          <img src="images/orange-diamond.png" alt="orange diamond" /> Language
+          <ul class="items">
+            <li>Javascript</li>
+            <li>Ruby</li>
+            <li>Html</li>
+            <li>Css</li>
+          </ul>
         </div>
-        <ul class="list">
-          <li>Javascript</li>
-          <li>Ruby</li>
-          <li>Html</li>
-          <li>Css</li>
-        </ul>
-        <div class="list-title">
-          <img
-            class="shapes"
-            src="images/orange-square.png"
-            alt="orange diamond"
-          />
-          Frameworks
-        </div>
-        <ul class="list">
-          <li>Bootstrap</li>
-          <li>Ruby on Rails</li>
-          <li>RSPec</li>
-          <li>CapyBara</li>
-          <li>Celenium</li>
-        </ul>
-        <div class="list-title">
-          <img
-            class="shapes"
-            src="images/orange-circle.png"
-            alt="orange diamond"
-          />
-          Skills
-        </div>
-        <ul class="list">
-          <li>Codekit</li>
-          <li>Github</li>
-          <li>Codepen</li>
-          <li>Gitlab</li>
-          <li>Terminal</li>
-        </ul>
-      </div>
 
-      <!--CONTACTS-->
-      <div class="contact-info">
-        <p class="contact-text">
+        <div>
+          <img src="images/orange-square.png" alt="orange square" /> Frameworks
+          <ul class="items">
+            <li>Bootstrap</li>
+            <li>Ruby on Rails</li>
+            <li>RSPec</li>
+            <li>CapyBara</li>
+            <li>Selenium</li>
+          </ul>
+        </div>
+
+        <div class="skills">
+          <img src="images/orange-circle.png" alt="orange circle" /> Skills
+          <ul class="items">
+            <li>Codekit</li>
+            <li>Github</li>
+            <li>Codepen</li>
+            <li>Gitlab</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--End of About me section-->
+
+    <!--FOOTER SECTION-->
+
+    <footer>
+      <div class="footer-block">
+        <p class="footer-text-box">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </p>
 
-        <!--contact form-->
         <form action="https://formspree.io/f/xlezlyqd" method="POST">
-          <div class="form-group">
+          <div class="form-group input-flex">
             <input
               type="text"
               name="name"
+              id="fname"
+              class="input-style"
+              maxlength="30"
+              placeholder="First name"
+              required
+            />
+            <input
+              type="text"
+              name="sname"
               id="name"
               class="input-style"
               maxlength="30"
-              placeholder="Full name"
+              placeholder="Last name"
               required
             />
-          </div>
-
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="input-style"
-              placeholder="Email address"
-              required
-            />
-          </div>
-
-          <div class="form-group">
-            <textarea
-              id="comments"
-              class="input-textarea"
-              name="comment"
-              maxlength="500"
-              placeholder="Enter message here"
-              required
-            ></textarea>
           </div>
 
           <input
-            type="submit"
-            value="Get in touch"
-            id="submit"
-            class="submit-button"
+            type="email"
+            name="email"
+            id="email"
+            class="input-style"
+            maxlength="30"
+            placeholder="Email address"
+            required
           />
+
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            maxlength="500"
+            placeholder="Hello Mariane. Glad to see you |"
+            required
+          ></textarea>
+          <button type="button" id="in-touch-btn">Get in touch</button>
         </form>
-
-        <div class="end-line"></div>
-        <div class="section-grey-social-media">
-          <ul class="links">
-            <li>
-              <a href="#" class="icon-hover">
-                <img src="images/grey-github.png" alt="github icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover">
-                <img src="images/grey-linkedIn.png" alt="linkedin icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover">
-                <img src="images/grey-peace.png" alt="peace icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover"
-                ><img src="images/grey-twitter.png" alt="twitter icon"
-              /></a>
-            </li>
-            <li>
-              <a href="#" class="icon-hover"
-                ><img src="images/grey-medium.png" alt="medium icon"
-              /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="line-thick"></div>
       </div>
-    </section>
 
-    <!--END LINE-->
+      <!--Footer line-->
+      <div class="footer-line"></div>
+
+      <div class="section-grey-social-media">
+        <ul class="links">
+          <li>
+            <a href="#" class="icon-hover">
+              <img src="images/grey-github.png" alt="github icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="icon-hover">
+              <img src="images/grey-linkedIn.png" alt="linkedin icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="icon-hover">
+              <img src="images/grey-peace.png" alt="peace icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="icon-hover"
+              ><img src="images/grey-twitter.png" alt="twitter icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#" class="icon-hover"
+              ><img src="images/grey-medium.png" alt="medium icon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
