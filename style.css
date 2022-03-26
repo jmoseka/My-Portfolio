@@ -80,6 +80,20 @@ nav ul {
   font-size: 20px;
   line-height: 20px;
   cursor: pointer;
+  animation: logoAnim 2s cubic-bezier(0.12, 0, 0.39, 0) 0s 1 normal forwards;
+}
+
+/*Add animation to logo text*/
+@keyframes logoAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
 }
 
 .email-icon:hover {
@@ -387,6 +401,20 @@ This should come before section main heading according to stylint checker */
   position: absolute;
   color: white;
   bottom: 5%;
+}
+
+.project-post:hover {
+  animation: cardAnim 1s cubic-bezier(0.61, 1, 0.88, 1) 0s 1 normal forwards;
+}
+
+@keyframes cardAnim {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .project-post h2 {
