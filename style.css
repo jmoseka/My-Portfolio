@@ -83,7 +83,7 @@ nav ul {
   animation: logoAnim 2s cubic-bezier(0.12, 0, 0.39, 0) 0s 1 normal forwards;
 }
 
-/*Add animation to logo text*/
+/* Add animation to logo text */
 @keyframes logoAnim {
   0% {
     animation-timing-function: ease-in;
@@ -491,6 +491,21 @@ This should come before section main heading according to stylint checker */
   font-size: 55px;
   line-height: 52px;
   color: var(--orange);
+  animation: aboutMeTextAnim 1s ease-in 0s 1 alternate both;
+}
+
+@keyframes aboutMeTextAnim {
+  0% {
+    opacity: 0;
+    transform: rotateX(-100deg);
+    transform-origin: top;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
 }
 
 .about-me-text {
@@ -584,6 +599,19 @@ This should come before section main heading according to stylint checker */
   line-height: 50px;
   width: 45%;
   color: #262626;
+  animation: footerTextAnim 1s ease-in 0s 1 alternate both;
+}
+
+@keyframes footerTextAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 form {
