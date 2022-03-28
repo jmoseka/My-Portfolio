@@ -84,11 +84,11 @@ nav {
   font-size: 20px;
   line-height: 20px;
   cursor: pointer;
-  animation: logo-anim 1s ease 0s 1 normal forwards;
+  animation: logoAnim 1s ease 0s 1 normal forwards;
 }
 
 /* Add animation to logo text */
-@keyframes logo-anim {
+@keyframes logoAnim {
   0% {
     transform: scale(2);
   }
