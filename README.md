@@ -19,6 +19,8 @@
 
 <img src="images/demo-desktop.gif" alt="portfolio gif">
 
+#Live Demo
+
 ## Getting Started
 
 To get a local copy up, fork the project and clone to your local repository.
