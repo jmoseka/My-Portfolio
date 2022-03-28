@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[LIVE]("https://jmoseka.github.io/Portfolio-Mobile1/")
+[LIVE](https://jmoseka.github.io/Portfolio-Mobile1/)
 
 ## Demo
 
