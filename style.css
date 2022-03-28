@@ -874,6 +874,7 @@ form {
   }
 
   .about-me-block {
+    height: 600px;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
