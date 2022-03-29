@@ -15,6 +15,10 @@
 - Languages: HTML, CSS
 - Technologies used: Html-Css Linters, Node Modules
 
+## Live Demo
+
+[LIVE](https://jmoseka.github.io/Portfolio-Mobile1/)
+
 ## Demo
 
 <img src="images/demo-desktop.gif" alt="portfolio gif">

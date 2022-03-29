@@ -18,7 +18,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  min-width: 768px;
+  min-width: 375px;
 }
 
 header {
@@ -50,7 +50,7 @@ nav {
   align-items: center;
 }
 
-nav ul {
+.nav-menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,6 +72,10 @@ nav ul {
   line-height: 20px;
 }
 
+.menu-bar {
+  display: none;
+}
+
 .logo-text {
   color: white;
   font-family: "Inter", sans-serif;
@@ -80,25 +84,18 @@ nav ul {
   font-size: 20px;
   line-height: 20px;
   cursor: pointer;
-  animation: logoAnim 2s cubic-bezier(0.12, 0, 0.39, 0) 0s 1 normal forwards;
+  animation: logo-anim 1s ease 0s 1 normal forwards;
 }
 
 /* Add animation to logo text */
-@keyframes logoAnim {
+@keyframes logo-anim {
   0% {
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateY(-45px);
+    transform: scale(2);
   }
 
-  24% {
-    opacity: 1;
+  100% {
+    transform: scale(1);
   }
-}
-
-.email-icon:hover {
-  background: var(--orange);
-  cursor: pointer;
 }
 
 .nav-links:hover {
@@ -121,6 +118,10 @@ This should come before section main heading according to stylint checker */
   line-height: 20px;
   padding: 5px;
   margin-right: 12px;
+}
+
+.menu-hover:hover {
+  background: var(--orange);
 }
 
 .items li {
@@ -146,11 +147,15 @@ This should come before section main heading according to stylint checker */
   height: 650px;
   background-color: var(--black);
   display: inline-grid;
-  grid-template-columns: 6% 94%;
+  background-image: url("images/Illustration-header2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  grid-template-columns: 5% 95%;
+  column-gap: 50px;
 }
 
 /* Social links stylings */
-.section-main-heading ul {
+.main-social-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,24 +171,25 @@ This should come before section main heading according to stylint checker */
 
 .block {
   display: flex;
+  flex-direction: row;
 }
 
 /* main image illustration */
 
-.main-image {
+/* .main-imag {
   width: 45%;
   background: url("images/Illustration-header.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
+} */
 
 .main-content {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin-left: 50px;
+  margin: 0;
 }
 
 .main-title {
@@ -301,7 +307,7 @@ This should come before section main heading according to stylint checker */
   color: var(--blue);
 }
 
-#feature-btn {
+.see-project {
   width: 120px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -317,23 +323,23 @@ This should come before section main heading according to stylint checker */
 
 /* Feature button, hover, enabled, pressed, disabled */
 
-#feature-btn:active {
+.see-project:active {
   background: var(--orange);
   color: white;
 }
 
-#feature-btn:enabled {
+.see-project:enabled {
   background: #e05304;
   color: white;
 }
 
-#feature-btn:hover {
+.see-project:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: var(--orange);
 }
 
-#featured-btn:disabled {
+.see-project:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
@@ -401,6 +407,7 @@ This should come before section main heading according to stylint checker */
   position: absolute;
   color: white;
   bottom: 5%;
+  height: 300px;
 }
 
 .project-post:hover {
@@ -454,11 +461,9 @@ This should come before section main heading according to stylint checker */
 /* ABOUT ME SECTION  - styling */
 .section-about-me {
   background: var(--black);
-  height: 1100px;
 }
 
 .about-me-block {
-  height: 590px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -482,6 +487,7 @@ This should come before section main heading according to stylint checker */
 .about-me-content {
   text-align: start;
   width: 50%;
+  margin-top: 120px;
 }
 
 .about-me-title {
@@ -491,21 +497,6 @@ This should come before section main heading according to stylint checker */
   font-size: 55px;
   line-height: 52px;
   color: var(--orange);
-  animation: aboutMeTextAnim 1s ease-in 0s 1 alternate both;
-}
-
-@keyframes aboutMeTextAnim {
-  0% {
-    opacity: 0;
-    transform: rotateX(-100deg);
-    transform-origin: top;
-  }
-
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
-    transform-origin: top;
-  }
 }
 
 .about-me-text {
@@ -561,7 +552,7 @@ This should come before section main heading according to stylint checker */
 
 .about-me-line {
   border: 1px solid #fff;
-  margin: 0 100px 146px 100px;
+  margin: 90px 100px 90px 100px;
 }
 
 /* Styling list of languages, frameworks and skills */
@@ -572,6 +563,7 @@ This should come before section main heading according to stylint checker */
   flex-direction: row;
   justify-content: space-between;
   width: 70%;
+  padding-bottom: 50px;
 }
 
 .list-item div {
@@ -599,19 +591,6 @@ This should come before section main heading according to stylint checker */
   line-height: 50px;
   width: 45%;
   color: #262626;
-  animation: footerTextAnim 1s ease-in 0s 1 alternate both;
-}
-
-@keyframes footerTextAnim {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 form {
@@ -693,12 +672,30 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-bottom: 12px;
+}
+
+.btn-width {
+  display: none;
 }
 
 /* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .section-main-heading {
+    background-image: url("images/Illustration-header3.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    grid-template-columns: 5% 95%;
+  }
+}
+
 @media (min-width: 950px) {
-  .main-content {
-    margin-left: 100px;
+  .section-main-heading {
+    background-image: url("images/Illustration-header2.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    grid-template-columns: 5% 95%;
   }
 
   .main-title {
@@ -756,5 +753,205 @@ form {
 
   form {
     width: 60%;
+  }
+}
+
+/* MOBILE VERSION MEDIA QUERY */
+
+@media (max-width: 767px) {
+  /* Nav section */
+  .nav {
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .menu-bar {
+    display: inline;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+  .logo-text {
+    margin-left: 30px;
+  }
+
+  /* Main heading */
+  .section-main-heading {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: 790px;
+    background-image: url("images/Group15.png");
+    background-repeat: no-repeat;
+    background-position: right 120%;
+    padding-bottom: 220px;
+  }
+
+  .main-social-links {
+    background-color: transparent;
+    flex-direction: row;
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 12px;
+    justify-content: flex-start;
+  }
+
+  .main-social-links li {
+    padding-right: 21px;
+  }
+
+  .main-content {
+    width: 90%;
+    margin-left: 24px;
+  }
+
+  /* WORK SECTION */
+
+  .works-headline {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .works-heading {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .works-line {
+    margin: 30px 0 80px 0;
+  }
+
+  /* Featured post */
+  .featured-post {
+    flex-direction: column;
+  }
+
+  .feature-img-holder {
+    width: 100%;
+  }
+
+  .feature-content {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .feature-title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 12px;
+  }
+
+  .feature-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card-tags {
+    margin: 12px 0 12px 0;
+  }
+
+  /* Project section */
+  .project {
+    display: none;
+  }
+
+  .btn-width {
+    width: 100%;
+    display: block;
+  }
+
+  /* ABOUT ME */
+  .section-about-me {
+    margin-top: 200px;
+  }
+
+  .about-me-block {
+    height: 600px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0;
+    background-image: url("images/about-me-img.png");
+    background-repeat: no-repeat;
+    background-position: 100% 90%;
+  }
+
+  .about-me-content {
+    width: 90%;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 120px;
+  }
+
+  .about-me-img {
+    display: none;
+  }
+
+  .about-me-line {
+    margin: 0 24px 0 24px;
+  }
+
+  .list-item {
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 100px 0;
+  }
+
+  .items li {
+    align-items: center;
+    text-align: center;
+    padding: 12px 0 12px 0;
+  }
+
+  .list-item div {
+    margin-top: 15px;
+  }
+
+  .footer-block {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 24px 0 24px;
+  }
+
+  .footer-text-box {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: var(--blue);
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input-flex {
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .input-style {
+    width: 100%;
+  }
+
+  #in-touch-btn {
+    align-self: center;
+  }
+
+  .footer-line {
+    margin-top: 120px;
   }
 }
