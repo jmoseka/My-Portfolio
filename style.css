@@ -406,7 +406,7 @@ This should come before section main heading according to stylint checker */
   margin: 0 16px 0 16px;
   position: absolute;
   color: white;
-  bottom: 5%;
+  bottom: 3.5%;
   height: 300px;
 }
 
@@ -456,6 +456,7 @@ This should come before section main heading according to stylint checker */
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  color: white;
 }
 
 /* ABOUT ME SECTION  - styling */
@@ -604,9 +605,31 @@ form {
   justify-content: space-between;
 }
 
+.label-flex {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+
+  color: var(--black);
+}
+label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 0px 5px 0px;
+  font-weight: 400;
+}
+
+#fname,
+#lname {
+  width: 90%;
+}
+
 .input-style {
-  width: 48%;
-  padding: 15px;
+  width: 100%;
+  padding: 10px 0 10px 0;
   border: none;
   border-bottom: 1px solid #dbd8d7;
   font-family: "Roboto", sans-serif;
@@ -619,6 +642,10 @@ form {
 #comments {
   background: #fbf8f7;
   height: 125px;
+  max-height: 125px;
+  min-height: 125px;
+  max-width: 100%;
+  min-width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
