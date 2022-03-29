@@ -347,8 +347,8 @@ This should come before section main heading according to stylint checker */
 
 .see-project:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 .see-project:disabled {
@@ -399,8 +399,8 @@ This should come before section main heading according to stylint checker */
 
 .project button:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 .project button:disabled {
@@ -571,8 +571,8 @@ This should come before section main heading according to stylint checker */
 
 #resume-btn:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 #resume-btn:disabled {
@@ -708,8 +708,8 @@ label {
 
 #in-touch-btn:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 #in-touch-btn:disabled {
@@ -1017,24 +1017,5 @@ label {
 
   .footer-line {
     margin-top: 120px;
-  }
-
-  /* Mobile query buttons */
-  .see-project:hover {
-    background: #fff5e1;
-    border: 1px solid var(--dark-orange);
-    color: var(--dark-orange);
-  }
-
-  #resume-btn:hover {
-    background: #fff5e1;
-    border: 1px solid var(--dark-orange);
-    color: var(--dark-orange);
-  }
-
-  #in-touch-btn:hover {
-    background: #fff5e1;
-    border: 1px solid var(--dark-orange);
-    color: var(--dark-orange);
   }
 }
