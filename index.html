@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Jamila's Portfolio</title>
+    <title>Jamila Moseka Portfolio home page</title>
   </head>
   <body>
     <section class="section-nav">
@@ -22,7 +22,9 @@
             <li><a class="nav-links" href="#">Portfolio </a></li>
             <li><a class="nav-links" href="#">About</a></li>
             <li><a class="nav-links" href="#">Contact</a></li>
-            <li><img class="email-icon" src="images/Union.png" alt="" /></li>
+            <li>
+              <img class="email-icon" src="images/Union.png" alt="email icon" />
+            </li>
           </ul>
         </nav>
         <!--Ends-->
@@ -95,7 +97,7 @@
           <img
             id="feature-img"
             src="images/Img-placeholder.png"
-            alt="feature image"
+            alt="project feature"
           />
         </div>
 
@@ -130,11 +132,24 @@
 
         <!--Other project items-->
         <div class="project-others">
-          <img
-            src="images/img-2.png"
-            alt="Data dashboard healthcare project image"
-          />
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+          <button type="button" class="see-project btn-width">
+            See project
+          </button>
+        </div>
 
+        <div class="project-others">
           <div class="project-post">
             <h2>Data Dashboard Healthcare</h2>
             <p>
@@ -166,10 +181,6 @@
             </ul>
           </div>
 
-          <img
-            src="images/img-3.png"
-            alt="Data dashboard healthcare project image"
-          />
           <button type="button" class="see-project btn-width">
             See project
           </button>
@@ -188,10 +199,7 @@
               <li>ruby</li>
             </ul>
           </div>
-          <img
-            src="images/img-4.png"
-            alt="Data dashboard healthcare project image"
-          />
+
           <button type="button" class="see-project btn-width">
             See project
           </button>
@@ -210,32 +218,7 @@
               <li>ruby</li>
             </ul>
           </div>
-          <img
-            src="images/img-5.png"
-            alt="Data dashboard healthcare project image"
-          />
-          <button type="button" class="see-project btn-width">
-            See project
-          </button>
-        </div>
 
-        <div class="project-others">
-          <div class="project-post">
-            <h2>Data Dashboard Healthcare</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="project-lang-tag">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>ruby</li>
-            </ul>
-          </div>
-          <img
-            src="images/img-6.png"
-            alt="Data dashboard healthcare project image"
-          />
           <button type="button" class="see-project btn-width">
             See project
           </button>
@@ -312,36 +295,41 @@
 
         <form action="https://formspree.io/f/xlezlyqd" method="POST">
           <div class="form-group input-flex">
-            <input
-              type="text"
-              name="name"
-              id="fname"
-              class="input-style"
-              maxlength="30"
-              placeholder="First name"
-              required
-            />
-            <input
-              type="text"
-              name="sname"
-              id="name"
-              class="input-style"
-              maxlength="30"
-              placeholder="Last name"
-              required
-            />
+            <div class="label-flex">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                name="name"
+                id="fname"
+                class="input-style"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="label-flex">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                name="sname"
+                id="lname"
+                class="input-style"
+                maxlength="30"
+                required
+              />
+            </div>
           </div>
 
+          <label for="email">Email</label>
           <input
             type="email"
             name="email"
             id="email"
             class="input-style"
             maxlength="30"
-            placeholder="Email address"
             required
           />
 
+          <label for="comments">Comment Feedback</label>
           <textarea
             id="comments"
             class="input-textarea"

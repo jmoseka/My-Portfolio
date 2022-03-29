@@ -6,6 +6,7 @@
   --orange: #ff6b00;
   --light: #fff5e1;
   --blue: #091e42;
+  --dark-orange: #973902;
 }
 
 * {
@@ -99,7 +100,7 @@ nav {
 }
 
 .nav-links:hover {
-  color: var(--orange);
+  color: var(--dark-orange);
 }
 
 .logo-text:hover {
@@ -152,6 +153,19 @@ This should come before section main heading according to stylint checker */
   background-position: 100% 100%;
   grid-template-columns: 5% 95%;
   column-gap: 50px;
+  animation: headingAnim 1s ease 0s 1 normal forwards;
+}
+
+@keyframes headingAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* Social links stylings */
@@ -315,8 +329,8 @@ This should come before section main heading according to stylint checker */
   font-size: 15px;
   line-height: 19px;
   cursor: pointer;
+  background: var(--dark-orange);
   color: white;
-  background: var(--orange);
   padding: 10px;
   border: none;
 }
@@ -325,18 +339,16 @@ This should come before section main heading according to stylint checker */
 
 .see-project:active {
   background: var(--orange);
-  color: white;
 }
 
 .see-project:enabled {
-  background: #e05304;
-  color: white;
+  background: var(--dark-orange);
 }
 
 .see-project:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 .see-project:disabled {
@@ -381,14 +393,14 @@ This should come before section main heading according to stylint checker */
 }
 
 .project button:enabled {
-  background: #e05304;
+  background: var(--dark-orange);
   color: white;
 }
 
 .project button:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 .project button:disabled {
@@ -400,18 +412,26 @@ This should come before section main heading according to stylint checker */
   display: flex;
   flex-direction: column;
   position: relative;
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(22, 22, 22, 0.342) 0.8%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url("images/img-3.png");
+  height: 400px;
 }
 
 .project-post {
   margin: 0 16px 0 16px;
   position: absolute;
   color: white;
-  bottom: 5%;
+  bottom: 3.5%;
   height: 300px;
 }
 
 .project-post:hover {
-  animation: cardAnim 1s cubic-bezier(0.61, 1, 0.88, 1) 0s 1 normal forwards;
+  animation: cardAnim 1s ease 0s 1 normal forwards;
 }
 
 @keyframes cardAnim {
@@ -422,6 +442,15 @@ This should come before section main heading according to stylint checker */
   100% {
     transform: scale(1);
   }
+}
+
+.project-others img {
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(199, 30, 30, 0) 0.85%,
+      rgba(129, 10, 10, 0.9) 84%
+    );
 }
 
 .project-post h2 {
@@ -456,6 +485,7 @@ This should come before section main heading according to stylint checker */
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+  color: white;
 }
 
 /* ABOUT ME SECTION  - styling */
@@ -517,7 +547,7 @@ This should come before section main heading according to stylint checker */
 #resume-btn {
   cursor: pointer;
   color: white;
-  background: var(--orange);
+  background: var(--dark-orange);
   padding: 10px;
   border: none;
   font-family: "Inter", sans-serif;
@@ -535,14 +565,14 @@ This should come before section main heading according to stylint checker */
 }
 
 #resume-btn:enabled {
-  background: #e05304;
+  background: var(--dark-orange);
   color: white;
 }
 
 #resume-btn:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 #resume-btn:disabled {
@@ -604,9 +634,30 @@ form {
   justify-content: space-between;
 }
 
+.label-flex {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  color: var(--black);
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 0 5px 0;
+  font-weight: 400;
+}
+
+#fname,
+#lname {
+  width: 90%;
+}
+
 .input-style {
-  width: 48%;
-  padding: 15px;
+  width: 100%;
+  padding: 10px 0 10px 0;
   border: none;
   border-bottom: 1px solid #dbd8d7;
   font-family: "Roboto", sans-serif;
@@ -619,17 +670,22 @@ form {
 #comments {
   background: #fbf8f7;
   height: 125px;
+  max-height: 125px;
+  min-height: 125px;
+  max-width: 100%;
+  min-width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 24px;
+  margin: 24px 0;
 }
 
 #in-touch-btn {
   margin: 36px 0;
   border: none;
-  background-color: var(--orange);
+  background-color: var(--dark-orange);
   padding: 10px;
   color: white;
   width: 120px;
@@ -646,14 +702,14 @@ form {
 }
 
 #in-touch-btn:enabled {
-  background: #e05304;
+  background: var(--dark-orange);
   color: white;
 }
 
 #in-touch-btn:hover {
   background: #fff5e1;
-  border: 1px solid #f55800;
-  color: var(--orange);
+  border: 1px solid var(--dark-orange);
+  color: var(--dark-orange);
 }
 
 #in-touch-btn:disabled {
@@ -769,16 +825,34 @@ form {
     display: none;
   }
 
+  .main-social-links li {
+    padding-right: 21px;
+  }
+
+  .items li {
+    align-items: center;
+    text-align: center;
+    padding: 12px 0 12px 0;
+  }
+
+  .nav-menu li:hover {
+    color: var(--dark-orange);
+  }
+
+  .logo-text {
+    margin-left: 30px;
+  }
+
+  .logo-text:hover {
+    color: var(--dark-orange);
+  }
+
   .menu-bar {
     display: inline;
     height: 24px;
     width: 24px;
     cursor: pointer;
     margin-right: 30px;
-  }
-
-  .logo-text {
-    margin-left: 30px;
   }
 
   /* Main heading */
@@ -800,10 +874,6 @@ form {
     margin-left: 50px;
     margin-top: 12px;
     justify-content: flex-start;
-  }
-
-  .main-social-links li {
-    padding-right: 21px;
   }
 
   .main-content {
@@ -905,12 +975,6 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 100px 0 100px 0;
-  }
-
-  .items li {
-    align-items: center;
-    text-align: center;
-    padding: 12px 0 12px 0;
   }
 
   .list-item div {
