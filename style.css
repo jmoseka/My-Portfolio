@@ -6,7 +6,7 @@
   --orange: #ff6b00;
   --light: #fff5e1;
   --blue: #091e42;
-  --button-bg: #973902;
+  --dark-orange: #973902;
 }
 
 * {
@@ -329,7 +329,7 @@ This should come before section main heading according to stylint checker */
   font-size: 15px;
   line-height: 19px;
   cursor: pointer;
-  background: var(--button-bg);
+  background: var(--dark-orange);
   color: white;
   padding: 10px;
   border: none;
@@ -342,7 +342,7 @@ This should come before section main heading according to stylint checker */
 }
 
 .see-project:enabled {
-  background: var(--button-bg);
+  background: var(--dark-orange);
 }
 
 .see-project:hover {
@@ -393,7 +393,7 @@ This should come before section main heading according to stylint checker */
 }
 
 .project button:enabled {
-  background: var(--button-bg);
+  background: var(--dark-orange);
   color: white;
 }
 
@@ -547,7 +547,7 @@ This should come before section main heading according to stylint checker */
 #resume-btn {
   cursor: pointer;
   color: white;
-  background: var(--button-bg);
+  background: var(--dark-orange);
   padding: 10px;
   border: none;
   font-family: "Inter", sans-serif;
@@ -565,7 +565,7 @@ This should come before section main heading according to stylint checker */
 }
 
 #resume-btn:enabled {
-  background: var(--button-bg);
+  background: var(--dark-orange);
   color: white;
 }
 
@@ -685,7 +685,7 @@ label {
 #in-touch-btn {
   margin: 36px 0;
   border: none;
-  background-color: var(--button-bg);
+  background-color: var(--dark-orange);
   padding: 10px;
   color: white;
   width: 120px;
@@ -702,7 +702,7 @@ label {
 }
 
 #in-touch-btn:enabled {
-  background: var(--button-bg);
+  background: var(--dark-orange);
   color: white;
 }
 
@@ -825,16 +825,34 @@ label {
     display: none;
   }
 
+  .main-social-links li {
+    padding-right: 21px;
+  }
+
+  .items li {
+    align-items: center;
+    text-align: center;
+    padding: 12px 0 12px 0;
+  }
+
+  .nav-menu li:hover {
+    color: var(--dark-orange);
+  }
+
+  .logo-text {
+    margin-left: 30px;
+  }
+
+  .logo-text:hover {
+    color: var(--dark-orange);
+  }
+
   .menu-bar {
     display: inline;
     height: 24px;
     width: 24px;
     cursor: pointer;
     margin-right: 30px;
-  }
-
-  .logo-text {
-    margin-left: 30px;
   }
 
   /* Main heading */
@@ -856,10 +874,6 @@ label {
     margin-left: 50px;
     margin-top: 12px;
     justify-content: flex-start;
-  }
-
-  .main-social-links li {
-    padding-right: 21px;
   }
 
   .main-content {
@@ -963,12 +977,6 @@ label {
     padding: 100px 0 100px 0;
   }
 
-  .items li {
-    align-items: center;
-    text-align: center;
-    padding: 12px 0 12px 0;
-  }
-
   .list-item div {
     margin-top: 15px;
   }
@@ -1009,5 +1017,24 @@ label {
 
   .footer-line {
     margin-top: 120px;
+  }
+
+  /* Mobile query buttons */
+  .see-project:hover {
+    background: #fff5e1;
+    border: 1px solid var(--dark-orange);
+    color: var(--dark-orange);
+  }
+
+  #resume-btn:hover {
+    background: #fff5e1;
+    border: 1px solid var(--dark-orange);
+    color: var(--dark-orange);
+  }
+
+  #in-touch-btn:hover {
+    background: #fff5e1;
+    border: 1px solid var(--dark-orange);
+    color: var(--dark-orange);
   }
 }
