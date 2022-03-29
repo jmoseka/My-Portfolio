@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Jamila's Portfolio</title>
+    <title>Jamila Moseka Portfolio home page</title>
   </head>
   <body>
     <section class="section-nav">
@@ -312,6 +312,7 @@
 
         <form action="https://formspree.io/f/xlezlyqd" method="POST">
           <div class="form-group input-flex">
+            <label for="fname">First Name</label>
             <input
               type="text"
               name="name"
@@ -321,10 +322,11 @@
               placeholder="First name"
               required
             />
+            <label for="lname">Last Name</label>
             <input
               type="text"
               name="sname"
-              id="name"
+              id="lname"
               class="input-style"
               maxlength="30"
               placeholder="Last name"
@@ -332,6 +334,7 @@
             />
           </div>
 
+          <label for="email">Email</label>
           <input
             type="email"
             name="email"
@@ -342,6 +345,7 @@
             required
           />
 
+          <label for="comments">Comment Feedback</label>
           <textarea
             id="comments"
             class="input-textarea"
