@@ -6,6 +6,7 @@
   --orange: #ff6b00;
   --light: #fff5e1;
   --blue: #091e42;
+  --button-bg: #973902;
 }
 
 * {
@@ -315,8 +316,8 @@ This should come before section main heading according to stylint checker */
   font-size: 15px;
   line-height: 19px;
   cursor: pointer;
+  background: var(--button-bg);
   color: white;
-  background: #913703;
   padding: 10px;
   border: none;
 }
@@ -325,12 +326,10 @@ This should come before section main heading according to stylint checker */
 
 .see-project:active {
   background: var(--orange);
-  color: white;
 }
 
 .see-project:enabled {
-  background: #e05304;
-  color: white;
+  background: var(--button-bg);
 }
 
 .see-project:hover {
@@ -381,7 +380,7 @@ This should come before section main heading according to stylint checker */
 }
 
 .project button:enabled {
-  background: #e05304;
+  background: var(--button-bg);
   color: white;
 }
 
@@ -535,7 +534,7 @@ This should come before section main heading according to stylint checker */
 #resume-btn {
   cursor: pointer;
   color: white;
-  background: #913703;
+  background: var(--button-bg);
   padding: 10px;
   border: none;
   font-family: "Inter", sans-serif;
@@ -553,7 +552,7 @@ This should come before section main heading according to stylint checker */
 }
 
 #resume-btn:enabled {
-  background: #e05304;
+  background: var(--button-bg);
   color: white;
 }
 
@@ -673,7 +672,7 @@ label {
 #in-touch-btn {
   margin: 36px 0;
   border: none;
-  background-color: #913703;
+  background-color: var(--button-bg);
   padding: 10px;
   color: white;
   width: 120px;
@@ -690,7 +689,7 @@ label {
 }
 
 #in-touch-btn:enabled {
-  background: #e05304;
+  background: var(--button-bg);
   color: white;
 }
 
