@@ -155,6 +155,7 @@ This should come before section main heading according to stylint checker */
   column-gap: 50px;
   animation: headingAnim 1s ease 0s 1 normal forwards;
 }
+
 @keyframes headingAnim {
   0% {
     opacity: 0;
@@ -411,7 +412,8 @@ This should come before section main heading according to stylint checker */
   display: flex;
   flex-direction: column;
   position: relative;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       179.35deg,
       rgba(22, 22, 22, 0.342) 0.8%,
       rgba(38, 38, 38, 0.9) 84%
@@ -429,7 +431,7 @@ This should come before section main heading according to stylint checker */
 }
 
 .project-post:hover {
-  animation: cardAnim 1s cubic-bezier(0.61, 1, 0.88, 1) 0s 1 normal forwards;
+  animation: cardAnim 1s ease 0s 1 normal forwards;
 }
 
 @keyframes cardAnim {
@@ -443,11 +445,12 @@ This should come before section main heading according to stylint checker */
 }
 
 .project-others img {
-  background: linear-gradient(
-    179.35deg,
-    rgba(199, 30, 30, 0) 0.85%,
-    rgba(129, 10, 10, 0.9) 84%
-  );
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(199, 30, 30, 0) 0.85%,
+      rgba(129, 10, 10, 0.9) 84%
+    );
 }
 
 .project-post h2 {
