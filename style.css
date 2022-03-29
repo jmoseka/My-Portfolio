@@ -444,7 +444,6 @@ This should come before section main heading according to stylint checker */
 .project-post ul {
   top: 24px;
 }
-
 .project-post ul li {
   float: left;
   padding: 10px;
