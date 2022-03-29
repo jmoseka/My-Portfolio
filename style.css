@@ -316,7 +316,7 @@ This should come before section main heading according to stylint checker */
   line-height: 19px;
   cursor: pointer;
   color: white;
-  background: var(--orange);
+  background: #913703;
   padding: 10px;
   border: none;
 }
@@ -518,7 +518,7 @@ This should come before section main heading according to stylint checker */
 #resume-btn {
   cursor: pointer;
   color: white;
-  background: var(--orange);
+  background: #913703;
   padding: 10px;
   border: none;
   font-family: "Inter", sans-serif;
@@ -656,7 +656,7 @@ label {
 #in-touch-btn {
   margin: 36px 0;
   border: none;
-  background-color: var(--orange);
+  background-color: #913703;
   padding: 10px;
   color: white;
   width: 120px;
