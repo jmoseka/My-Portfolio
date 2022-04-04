@@ -410,7 +410,8 @@ This should come before section main heading according to stylint checker */
   display: flex;
   flex-direction: column;
   position: relative;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       179.35deg,
       rgba(22, 22, 22, 0.342) 0.8%,
       rgba(38, 38, 38, 0.9) 84%
@@ -442,11 +443,12 @@ This should come before section main heading according to stylint checker */
 }
 
 .project-others img {
-  background: linear-gradient(
-    179.35deg,
-    rgba(199, 30, 30, 0) 0.85%,
-    rgba(129, 10, 10, 0.9) 84%
-  );
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(199, 30, 30, 0) 0.85%,
+      rgba(129, 10, 10, 0.9) 84%
+    );
 }
 
 .project-post h2 {
@@ -1008,6 +1010,7 @@ label {
   .nav {
     justify-content: start;
   }
+
   .email-icon {
     display: none;
   }
@@ -1019,7 +1022,7 @@ label {
   .primary-nav.active {
     display: block;
     position: absolute;
-    top:100px;
+    top: 100px;
     background: var(--dark-gray);
     width: 100%;
     height: 100vh;
@@ -1029,10 +1032,12 @@ label {
     display: none;
   }
 
-
   .primary-nav li {
     border-bottom: 1px solid gray;
+    margin: 0 24px 0 24px;
+    padding: 24px 0 15px;
   }
+
   .primary-nav li a {
     font-weight: 700;
     font-size: 32px;
@@ -1047,7 +1052,6 @@ label {
     height: 24px;
     top: 1.5rem;
     right: 2rem;
-    aspect-ratio: 1;
     border: 0;
   }
 
@@ -1065,11 +1069,11 @@ label {
 
   .menu-bar.active .bar:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
-      background-color: #67798E;
+    background-color: #67798e;
   }
 
   .menu-bar.active .bar:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
-      background-color: #67798E;
+    background-color: #67798e;
   }
 }
