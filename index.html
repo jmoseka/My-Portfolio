@@ -11,22 +11,24 @@
     <section class="section-nav">
       <header>
         <!--Navigation Menu-->
+
         <nav class="nav">
           <a class="logo-text">Jamila Moseka</a>
-          <img
-            class="menu-bar menu-hover"
-            src="images/menu1.png"
-            alt="menu options"
-          />
-          <ul class="nav-menu">
-            <li><a class="nav-links" href="#">Portfolio </a></li>
-            <li><a class="nav-links" href="#">About</a></li>
-            <li><a class="nav-links" href="#">Contact</a></li>
-            <li>
-              <img class="email-icon" src="images/Union.png" alt="email icon" />
+          <div id="id-menu-bar" class="menu-bar">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="primary-nav">
+            <li><a class="nav-links" href="#work">Portfolio</a></li>
+            <li><a class="nav-links" href="#aboutme">About</a></li>
+            <li><a class="nav-links" href="#contact">Contact</a></li>
+            <li class="email-icon">
+              <img src="images/Union.png" alt="email icon" />
             </li>
           </ul>
         </nav>
+
         <!--Ends-->
       </header>
     </section>
@@ -84,7 +86,7 @@
     <!--END OF MAIN HEADING SECTION-->
 
     <!--SECTION WORK - It is divided into 3 parts-->
-    <section class="section-work">
+    <section id="work" class="section-work">
       <!--Part 1 - Headline heading and horizontal line-->
       <div class="works-headline">
         <h2 class="works-heading">My Recent Works</h2>
@@ -227,7 +229,7 @@
     </section>
 
     <!--SECTION ABOUT ME-->
-    <section class="section-about-me">
+    <section id="aboutme" class="section-about-me">
       <!--The About me block consists of text and illustration image-->
 
       <div class="about-me-block">
@@ -286,7 +288,7 @@
 
     <!--FOOTER SECTION-->
 
-    <footer>
+    <footer id="contact">
       <div class="footer-block">
         <p class="footer-text-box">
           I'm always interested in hearing about new projects, so if you'd like
@@ -375,5 +377,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
