@@ -354,13 +354,17 @@
           to chat please get in touch.
         </p>
 
-        <form action="https://formspree.io/f/xlezlyqd" method="POST">
+        <form
+          id="contact-form"
+          action="https://formspree.io/f/xlezlyqd"
+          method="POST"
+        >
           <div class="form-group input-flex">
             <div class="label-flex">
               <label for="fname">First Name</label>
               <input
                 type="text"
-                name="name"
+                name="fname"
                 id="fname"
                 class="input-style"
                 maxlength="30"
@@ -371,7 +375,7 @@
               <label for="lname">Last Name</label>
               <input
                 type="text"
-                name="sname"
+                name="lname"
                 id="lname"
                 class="input-style"
                 maxlength="30"
@@ -399,6 +403,8 @@
             placeholder="Hello Mariane. Glad to see you |"
             required
           ></textarea>
+
+          <p class="alert hidden">You have entered an invalid email address!</p>
           <button type="button" id="in-touch-btn">Get in touch</button>
         </form>
       </div>

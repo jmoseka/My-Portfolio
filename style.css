@@ -794,6 +794,7 @@ label {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 #in-touch-btn:active {
@@ -833,6 +834,15 @@ label {
 
 .btn-width {
   width: 100%;
+}
+
+.alert {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: red;
 }
 
 /* MEDIA QUERIES */
@@ -1110,10 +1120,6 @@ label {
   .input-flex {
     flex-direction: column;
     justify-content: start;
-    width: 100%;
-  }
-
-  .input-style {
     width: 100%;
   }
 
