@@ -12,9 +12,6 @@ const projectBtn = document.querySelectorAll('.see-project');
 // Validate email
 const form = document.querySelector('#contact-form');
 const inputEmail = document.querySelector('#email');
-const inputFirstName = document.querySelector('#fname');
-const inputLastName = document.querySelector('#lname');
-const submitBtn = document.querySelector('#in-touch-btn');
 const alert = document.querySelector('.alert');
 
 const projects = {
@@ -133,15 +130,7 @@ projectBtn.forEach((button) => {
 });
 
 /** CONTACT FORM VALIDATION */
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-});
-
 // error message
-function alertMsg(msg) {
-  alert.classList.remove('hidden');
-  alert.textContent = msg;
-}
 
 // remove error message upon clicking anywhere
 document.onclick = (e) => {
@@ -155,31 +144,19 @@ document.onclick = (e) => {
   }
 };
 
-const isEmptyFields = () => {
-  if (inputFirstName.value === '') {
-    alertMsg('Please enter first name!');
-  } else if (inputLastName.value === '') {
-    alertMsg('Please enter last name!');
-  }
-};
+// error message
+function alertMsg(msg) {
+  alert.classList.remove('hidden');
+  alert.textContent = msg;
+}
 
 const isValidEmail = () => {
   const lowerCaseReg = /[a - z]/;
-
-  if (inputEmail.value === '') {
-    alertMsg('Please enter email!');
-  } else if (lowerCaseReg.test(inputEmail.value) === false) {
-    alertMsg('Please use small letters');
-  } else {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const result = re.test(String(inputEmail.value).toLowerCase());
-    if (result === false) {
-      alertMsg('Invalid email address');
-    }
+  if (lowerCaseReg.test(inputEmail.value) === false) {
+    alertMsg('Please use small letters for email address');
   }
 };
-
-submitBtn.addEventListener('click', () => {
-  isEmptyFields();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   isValidEmail();
 });

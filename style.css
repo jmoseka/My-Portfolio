@@ -744,10 +744,12 @@ form {
 label {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   padding: 15px 0 5px 0;
+  margin-top: 30px;
   font-weight: 400;
+  color: rebeccapurple;
 }
 
 #fname,
@@ -782,7 +784,7 @@ label {
   margin: 24px 0;
 }
 
-#in-touch-btn {
+#submit {
   margin: 36px 0;
   border: none;
   background-color: var(--dark-orange);
@@ -797,23 +799,23 @@ label {
   cursor: pointer;
 }
 
-#in-touch-btn:active {
+#submit:active {
   background: var(--orange);
   color: white;
 }
 
-#in-touch-btn:enabled {
+#submit:enabled {
   background: var(--dark-orange);
   color: white;
 }
 
-#in-touch-btn:hover {
+#submit:hover {
   background: #fff5e1;
   border: 1px solid var(--dark-orange);
   color: var(--dark-orange);
 }
 
-#in-touch-btn:disabled {
+#submit:disabled {
   background: #f4f1f0;
   color: #5b5957;
 }
@@ -1123,7 +1125,7 @@ label {
     width: 100%;
   }
 
-  #in-touch-btn {
+  #submit {
     align-self: center;
   }
 
