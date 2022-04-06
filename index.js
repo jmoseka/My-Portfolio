@@ -67,14 +67,30 @@ const projects = {
   },
 };
 
-//close modal
+/*Navigation humberger button open and close function */
+navToggle.addEventListener("click", () => {
+  primaryNav.classList.toggle("active");
+  logoText.classList.toggle("active");
+  menuBar.classList.toggle("active");
+});
+
+//close modal function
 const closeModal = function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 };
-
+//close modal button set on listener
 modalCloseBtn.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
+
+/**Close modal window if pressed anywhere */
+document.onclick = function (e) {
+  if (e.target.id !== "id-menu-bar") {
+    primaryNav.classList.remove("active");
+    logoText.classList.remove("active");
+    menuBar.classList.remove("active");
+  }
+};
 
 /**Loop through  project object */
 
@@ -86,10 +102,11 @@ projectBtn.forEach((button) => {
 
     const h2 = document.querySelector(".modal h2");
     const p = document.querySelector(".modal p");
-    const listLang = document.querySelectorAll(".modal ul li");
     const liveDemo = document.querySelector(".liveLink");
     const githubLink = document.querySelector(".gitLink");
     const img = document.querySelector(".image-proj");
+    //const ul = document.getElementsByClassName(".modal-list");
+    let items = document.querySelectorAll(".modal-list li");
 
     for (let project of [...Object.keys(projects)]) {
       if (button.classList.contains(project)) {
@@ -98,34 +115,11 @@ projectBtn.forEach((button) => {
         //liveDemo = projects[project].liveDemoLink;
         //githubLink = projects[project].gitLink;
         img.src = projects[project].image;
-        //console.log(projects[project].image);
+
+        for (let i = 0; i < items.length; i++) {
+          items[i].textContent = projects[project].technologies[i];
+        }
       }
     }
   });
 });
-
-/*Navigation humberger button open and close function */
-navToggle.addEventListener("click", () => {
-  primaryNav.classList.toggle("active");
-  logoText.classList.toggle("active");
-  menuBar.classList.toggle("active");
-});
-
-document.onclick = function (e) {
-  if (e.target.id !== "id-menu-bar") {
-    primaryNav.classList.remove("active");
-    logoText.classList.remove("active");
-    menuBar.classList.remove("active");
-  }
-};
-
-/**Modal window open and close function */
-
-/*for (let i = 0; i < projectBtn.length; i++) {
-  projectBtn[i].addEventListener("click", function () {
-    modalMobile.classList.remove("hidden");
-    overlay.classList.remove("hidden");
-  });
-}
-*/
-//close modal
