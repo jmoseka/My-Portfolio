@@ -354,54 +354,64 @@
           to chat please get in touch.
         </p>
 
-        <form action="https://formspree.io/f/xlezlyqd" method="POST">
-          <div class="form-group input-flex">
-            <div class="label-flex">
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                name="name"
-                id="fname"
-                class="input-style"
-                maxlength="30"
-                required
-              />
-            </div>
-            <div class="label-flex">
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                name="sname"
-                id="lname"
-                class="input-style"
-                maxlength="30"
-                required
-              />
-            </div>
+        
+        
+        <!--contact form-->
+        <form
+        action="https://formspree.io/f/mvolbjve"
+        method="POST"
+        id="contact-form"
+      >
+        <div class="form-group input-flex">
+          <div class="label-flex">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              class="input-style"
+              maxlength="30"
+              required
+            />
           </div>
+          <div class="label-flex">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              class="input-style"
+              maxlength="30"
+              required
+            />
+          </div>
+        </div>
 
-          <label for="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="input-style"
-            maxlength="30"
-            required
-          />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-style"
+          maxlength="30"
+          required
+        />
 
-          <label for="comments">Comment Feedback</label>
-          <textarea
-            id="comments"
-            class="input-textarea"
-            name="comment"
-            maxlength="500"
-            placeholder="Hello Mariane. Glad to see you |"
-            required
-          ></textarea>
-          <button type="button" id="in-touch-btn">Get in touch</button>
-        </form>
-      </div>
+        <label for="comments">Comment Feedback</label>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          maxlength="500"
+          placeholder="Hello Mariane. Glad to see you |"
+          required
+        ></textarea>
+
+        <p class="alert hidden">You have entered an invalid email address!</p>
+       
+        <button type="submit" id="submit" class="submit-button">Get in touch</button>
+      </form>
+    </div>
 
       <!--Footer line-->
       <div class="footer-line"></div>
