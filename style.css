@@ -137,6 +137,116 @@ This should come before section main heading according to stylint checker */
   padding: 10px;
 }
 
+/* ----------MODAL WINDOWS----------- */
+.hidden {
+  display: none;
+}
+
+.icon-btn {
+  width: 24px;
+  height: 24px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal {
+  padding: 16px;
+  position: fixed;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: 90%;
+  max-height: 95%;
+  overflow: scroll;
+}
+
+.modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-heading h2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+/* close button image */
+.modal-close {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.modal-list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal-list li {
+  margin: 80px 12px 34px 0;
+  padding: 10px;
+  border: 1px solid #dfe1e6;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-desc {
+  flex-direction: column;
+}
+
+.modal-text {
+  margin: 24px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--blue);
+}
+
+.modal-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3px;
+}
+
+.modal-buttons button {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fa {
+  padding-left: 8px;
+}
+
 /**********************   */
 
 /* MAIN SECTION HEADING STYLING */
@@ -188,13 +298,6 @@ This should come before section main heading according to stylint checker */
 }
 
 /* main image illustration */
-
-/* .main-imag {
-  width: 45%;
-  background: url("images/Illustration-header.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-} */
 
 .main-content {
   width: 45%;
@@ -353,116 +456,6 @@ This should come before section main heading according to stylint checker */
 .see-project:disabled {
   background: #f4f1f0;
   color: #5b5957;
-}
-
-/* ----------MODAL WINDOWS----------- */
-.hidden {
-  display: none;
-}
-
-.icon-btn {
-  width: 24px;
-  height: 24px;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
-
-.modal {
-  padding: 16px;
-  position: fixed;
-  background: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  width: 90%;
-  max-height: 95%;
-  overflow: scroll;
-}
-
-.modal-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.modal-heading h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-/* close button image */
-.modal-close {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-}
-
-.modal-list {
-  display: flex;
-  align-items: flex-start;
-}
-
-.modal-list li {
-  margin: 80px 12px 34px 0;
-  padding: 10px;
-  border: 1px solid #dfe1e6;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #3c3a39;
-}
-
-.modal-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-desc {
-  flex-direction: column;
-}
-
-.modal-text {
-  margin: 24px 0;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--blue);
-}
-
-.modal-buttons {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3px;
-}
-
-.modal-buttons button {
-  width: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.fa {
-  padding-left: 8px;
 }
 
 /* Styling the project grids */
