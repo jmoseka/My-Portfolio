@@ -355,51 +355,63 @@
         </p>
 
         
+        
         <!--contact form-->
-        <form id="contact-form" action="https://formspree.io/f/xlezlyqd" method="POST">
-          <div class="form-group">
+        <form
+        action="https://formspree.io/f/mvolbjve"
+        method="POST"
+        id="contact-form"
+      >
+        <div class="form-group input-flex">
+          <div class="label-flex">
+            <label for="fname">First Name</label>
             <input
               type="text"
-              name="name"
-              id="name"
+              name="fname"
+              id="fname"
               class="input-style"
               maxlength="30"
-              placeholder="Full name"
               required
             />
           </div>
-
-          <div class="form-group">
+          <div class="label-flex">
+            <label for="lname">Last Name</label>
             <input
-              type="email"
-              name="email"
-              id="email"
+              type="text"
+              name="lname"
+              id="lname"
               class="input-style"
-              placeholder="Email address"
+              maxlength="30"
               required
             />
           </div>
+        </div>
 
-          <div class="form-group">
-            <textarea
-              id="comments"
-              class="input-textarea"
-              name="comment"
-              maxlength="500"
-              placeholder="Enter message here"
-              required
-            ></textarea>
-          </div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="input-style"
+          maxlength="30"
+          required
+        />
 
-          <p class="alert hidden">You have entered an invalid email address!</p>
+        <label for="comments">Comment Feedback</label>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          maxlength="500"
+          placeholder="Hello Mariane. Glad to see you |"
+          required
+        ></textarea>
 
-          <input
-            type="submit"
-            value="Get in touch"
-            id="submit"
-            class="submit-button"
-          />
-        </form>
+        <p class="alert hidden">You have entered an invalid email address!</p>
+       
+        <button type="submit" id="submit" class="submit-button">Get in touch</button>
+      </form>
+    </div>
        
 
 

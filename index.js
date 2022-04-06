@@ -150,13 +150,10 @@ function alertMsg(msg) {
   alert.textContent = msg;
 }
 
-const isValidEmail = () => {
+form.addEventListener('submit', (e) => {
   const lowerCaseReg = /[a - z]/;
   if (lowerCaseReg.test(inputEmail.value) === false) {
     alertMsg('Please use small letters for email address');
+    e.preventDefault();
   }
-};
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  isValidEmail();
 });
