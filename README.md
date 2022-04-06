@@ -31,6 +31,12 @@ To get a local copy up, fork the project and clone to your local repository.
 
 👤 - GitHub: [@jmoseka](https://github.com/jmoseka)
 
+
+👥 **Co Author : IROTORI Baroka**
+- GitHub: [@githubhandle](https://github.com/Baroka-wp)
+- Twitter: [@twitterhandle](https://twitter.com/IrotoriB)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/baroka)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
