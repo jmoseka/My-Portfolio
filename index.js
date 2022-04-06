@@ -9,6 +9,15 @@ const overlay = document.querySelector(".overlay");
 const modalCloseBtn = document.querySelector(".modal-close");
 const projectBtn = document.querySelectorAll(".see-project");
 
+//Validate email
+const form = document.querySelector("#contact-form");
+const inputEmail = document.querySelector("#email");
+const inputFirstName = document.querySelector("#fname");
+const inputLastName = document.querySelector("#lname");
+const submitBtn = document.querySelector("#in-touch-btn");
+const alert = document.querySelector(".alert");
+const msgAlert = document.querySelector(".alert p");
+
 const projects = {
   featureProj: {
     title: "Multi-post Stories",
@@ -125,15 +134,6 @@ projectBtn.forEach((button) => {
 });
 
 /**CONTACT FORM VALIDATION */
-//Validate email
-const form = document.querySelector("#contact-form");
-const inputEmail = document.querySelector("#email");
-const inputFirstName = document.querySelector("#fname");
-const inputLastName = document.querySelector("#lname");
-const submitBtn = document.querySelector("#in-touch-btn");
-const alert = document.querySelector(".alert");
-const msgAlert = document.querySelector(".alert p");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
