@@ -120,9 +120,11 @@ projectBtn.forEach((button) => {
         // githubLink = projects[project].gitLink;
         img.src = projects[project].image;
 
+        let s = 0;
         // eslint-disable-next-line no-restricted-syntax
         for (const i of items) {
-          items[i].textContent = projects[project].technologies[i];
+          i.textContent = projects[project].technologies[s];
+          s += 1;
         }
       }
     }
