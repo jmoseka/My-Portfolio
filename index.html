@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1cd527edf2.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Jamila Moseka Portfolio home page</title>
   </head>
   <body>
+    <!-------------Navigation Menu--------------->
     <section class="section-nav">
       <header>
-        <!--Navigation Menu-->
-
         <nav class="nav">
-          <a class="logo-text">Jamila Moseka</a>
+          <h2><a class="logo-text">Jamila Moseka</a></h2>
           <div id="id-menu-bar" class="menu-bar">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -118,16 +128,65 @@
             <li><a href="#" id="ruby">ruby</a></li>
           </ul>
 
-          <button type="button" class="see-project">See Project</button>
+          <button type="button" class="see-project featureProj">
+            See Project
+          </button>
         </div>
       </div>
+
+      <!-----------------MODAL WINDOW--------------------------->
+      <!-- Mobile version-->
+      <div class="modal hidden">
+        <!--Contains the title and the cancel button-->
+        <div class="modal-heading">
+          <h2>Multi Post Stories</h2>
+          <img class="modal-close" src="images/cancel.png" alt="cancel icon" />
+        </div>
+
+        <!--The modal list consisting of languages-->
+        <ul class="modal-list">
+          <li>html</li>
+          <li>Bootstrap</li>
+          <li>Ruby on Rails</li>
+        </ul>
+
+        <div class="modal-content">
+          <!--Snapshot image of the project-->
+          <img class="image-proj" src="images/desktop-snapshot.png" alt="" />
+
+          <!--Paragraph text-->
+
+          <div class="modal-desc">
+            <p class="modal-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <div class="modal-buttons">
+              <button type="button" class="see-project liveLink">
+                See Live
+                <i class="fa-solid fa-circle-up"></i>
+              </button>
+
+              <button type="button" class="see-project gitLink">
+                See Source
+                <i class="fa fa-github"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
 
       <!--Part 3 - Project posts-->
       <div class="project-grid">
         <!--First project item that has button 👇-->
         <div class="project">
           <img src="images/img-1.png" alt="First project" />
-          <button type="button" id="feature-btn" class="see-project">
+          <button type="button" id="feature-btn" class="see-project project1">
             See Project
           </button>
         </div>
@@ -146,7 +205,7 @@
               <li>ruby</li>
             </ul>
           </div>
-          <button type="button" class="see-project btn-width">
+          <button type="button" class="see-project btn-width project2">
             See project
           </button>
         </div>
@@ -164,26 +223,7 @@
               <li>ruby</li>
             </ul>
           </div>
-          <button type="button" class="see-project btn-width">
-            See project
-          </button>
-        </div>
-
-        <div class="project-others">
-          <div class="project-post">
-            <h2>Data Dashboard Healthcare</h2>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required. has been the industry's standard
-            </p>
-            <ul class="project-lang-tag">
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>ruby</li>
-            </ul>
-          </div>
-
-          <button type="button" class="see-project btn-width">
+          <button type="button" class="see-project btn-width project3">
             See project
           </button>
         </div>
@@ -202,7 +242,7 @@
             </ul>
           </div>
 
-          <button type="button" class="see-project btn-width">
+          <button type="button" class="see-project btn-width project4">
             See project
           </button>
         </div>
@@ -221,7 +261,26 @@
             </ul>
           </div>
 
-          <button type="button" class="see-project btn-width">
+          <button type="button" class="see-project btn-width project5">
+            See project
+          </button>
+        </div>
+
+        <div class="project-others">
+          <div class="project-post">
+            <h2>Data Dashboard Healthcare</h2>
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <ul class="project-lang-tag">
+              <li>html</li>
+              <li>bootstrap</li>
+              <li>ruby</li>
+            </ul>
+          </div>
+
+          <button type="button" class="see-project btn-width project6">
             See project
           </button>
         </div>
