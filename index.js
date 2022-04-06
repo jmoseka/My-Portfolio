@@ -11,7 +11,7 @@ const projectBtn = document.querySelectorAll(".see-project");
 
 const projects = {
   featureProj: {
-    title: "Multipost Stories",
+    title: "Multi-post Stories",
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     technologies: ["html", "javascript", "bootstrap", "ruby on rail"],
     image: "images/Img-placeholder.png",
@@ -67,6 +67,15 @@ const projects = {
   },
 };
 
+//close modal
+const closeModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+
+modalCloseBtn.addEventListener("click", closeModal);
+overlay.addEventListener("click", closeModal);
+
 /**Loop through  project object */
 
 projectBtn.forEach((button) => {
@@ -120,10 +129,3 @@ document.onclick = function (e) {
 }
 */
 //close modal
-const closeModal = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-};
-
-modalCloseBtn.addEventListener("click", closeModal);
-overlay.addEventListener("click", closeModal);
