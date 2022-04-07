@@ -47,7 +47,7 @@ Run ALL tests on the pull request
 ### Deployment
 Files can be deployed with github pages
 
-
+## Authors
 👤 - **Author : JAMILA Moseka**
 GitHub: [jmoseka](https://github.com/jmoseka)
 LinkedIn [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
