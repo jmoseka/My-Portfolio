@@ -33,9 +33,9 @@ To get a local copy up, fork the project and clone to your local repository.
 
 
 👥 **Co Author : IROTORI Baroka**
-- GitHub: [@githubhandle](https://github.com/Baroka-wp)
-- Twitter: [@twitterhandle](https://twitter.com/IrotoriB)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/baroka)
+- GitHub: [Baroka-wp](https://github.com/Baroka-wp)
+- Twitter: [@IrotoriB](https://twitter.com/IrotoriB)
+- LinkedIn: [Baroka](www.linkedin.com/in/baroka)
 
 ## 🤝 Contributing
 
