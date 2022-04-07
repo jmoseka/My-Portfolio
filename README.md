@@ -47,21 +47,33 @@ Run ALL tests on the pull request
 ### Deployment
 Files can be deployed with github pages
 
-## Authors
-👤 - **Author : JAMILA Moseka**
-GitHub: [jmoseka](https://github.com/jmoseka)
-LinkedIn [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
+## Authors 👤
 
-👥 **Co Author : IROTORI Baroka**
+Jamila Moseka
+
+- GitHub: [jmoseka](https://github.com/jmoseka)
+- LinkedIn [jamila-moseka](https://www.linkedin.com/in/jamila-moseka/)
+
+👥 **Co Authors**
+
+ Irotori Baroka
 - GitHub: [Baroka-wp](https://github.com/Baroka-wp)
 - Twitter: [IrotoriB](https://twitter.com/IrotoriB)
 - LinkedIn: [Baroka](www.linkedin.com/in/baroka)
 
-## 🤝 Contributing
+Victor Aderibigbe
+- GitHub: [V0pe](https://github.com/V0pe)
+
+Sonia Karungi
+- GitHub: [SoniaKarungi](https://github.com/SoniaKarungi)
+
+<hr>
+
+## Contributing 🤝 
 
 Contributions, issues, and feature requests are welcome!
 
-## Acknowledgments
+## Acknowledgments 🥇
 [Baroka Irotori](https://github.com/Baroka-wp)
 
 ## Show your support
