@@ -40,8 +40,10 @@ Use [liverserver](https://marketplace.visualstudio.com/items?itemName=ritwickdey
 
 Run tests on the .css files
 ```npx stylelint "**/*.{css,scss}"```
+
 Run tests on the .js files
 ```npx eslint ```
+
 Run ALL tests on the pull request 
 
 ### Deployment
