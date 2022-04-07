@@ -88,16 +88,8 @@ const closeModal = () => {
 modalCloseBtn.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
-/** Close modal window if pressed anywhere */
-document.onclick = (e) => {
-  if (e.target.id !== 'id-menu-bar') {
-    primaryNav.classList.remove('active');
-    logoText.classList.remove('active');
-    menuBar.classList.remove('active');
-  }
-};
-
-/** Loop through  project object */
+/** Loop through project object to dynamically
+ *  set data on modal window */
 
 projectBtn.forEach((button) => {
   button.addEventListener('click', () => {
@@ -136,7 +128,12 @@ projectBtn.forEach((button) => {
 
 // remove error message upon clicking anywhere
 document.onclick = (e) => {
-  if (
+  /** Close modal window if pressed anywhere */
+  if (e.target.id !== 'id-menu-bar') {
+    primaryNav.classList.remove('active');
+    logoText.classList.remove('active');
+    menuBar.classList.remove('active');
+  } else if (
     e.target.id === 'email'
     || e.target.id === 'fname'
     || e.target.id === 'lname'
