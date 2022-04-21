@@ -10,7 +10,7 @@
 
 ## Live Demo
 
-[LIVE LINK](https://jmoseka.github.io/Portfolio-Mobile1/)
+[LIVE LINK](https://jmoseka.github.io/My-Portfolio/)
 
 ## Demo
 
