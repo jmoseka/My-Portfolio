@@ -110,14 +110,16 @@ projectBtn.forEach((button) => {
     const img = document.querySelector('.image-proj');
     // const ul = document.getElementsByClassName(".modal-list");
     const items = document.querySelectorAll('.modal-list li');
+    const livelink = document.querySelector('.liveLink');
+    const githubLink = document.querySelector('.gitLink');
 
     // eslint-disable-next-line no-restricted-syntax
     for (const project of [...Object.keys(projects)]) {
       if (button.classList.contains(project)) {
         h2.textContent = projects[project].title;
         p.textContent = projects[project].desc;
-        // liveDemo = projects[project].liveDemoLink;
-        // githubLink = projects[project].gitLink;
+        livelink.setAttribute('href', projects[project].liveDemoLink);
+        githubLink.setAttribute('href', projects[project].gitLink);
         img.src = projects[project].image;
 
         let s = 0;
