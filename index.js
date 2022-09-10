@@ -70,6 +70,14 @@ const projects = {
     liveDemoLink: 'https://sad-shirley-6aae5c.netlify.app/',
     gitLink: 'https://github.com/jmoseka/Landing-Page',
   },
+  project7: {
+    title: 'TECHINAL DOCUMENTATION',
+    desc: "A technical documentation website",
+    technologies: ['html', 'css'],
+    image: 'images/doc.png',
+    liveDemoLink: 'https://codepen.io/jmoseka/full/KKvoEWQ',
+    gitLink: 'https://github.com/jmoseka/Responsive-Web-Design/tree/main/Technical-Documentation',
+  },
 };
 
 /* Navigation humberger button open and close function */
