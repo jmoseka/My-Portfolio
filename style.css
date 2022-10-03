@@ -183,6 +183,7 @@ This should come before section main heading according to stylint checker */
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  color: black;
 }
 
 /* close button image */
