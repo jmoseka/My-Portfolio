@@ -560,7 +560,7 @@ This should come before section main heading according to stylint checker */
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.8rem;
   line-height: 24px;
   margin: 24px 0 24px 0;
 }
@@ -1198,4 +1198,44 @@ label {
     transform: translateY(-4px) rotate(-45deg);
     background-color: #67798e;
   }
+}
+
+.img2 {
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(22, 22, 22, 0.219) 0.8%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url('images/leaderboard.PNG');
+}
+
+.img3 {
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(22, 22, 22, 0.219) 0.8%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url('images/to-do.PNG');
+}
+
+.img4 {
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(22, 22, 22, 0.219) 0.8%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url('images/conference.PNG');
+}
+
+.img5 {
+  background:
+    linear-gradient(
+      179.35deg,
+      rgba(22, 22, 22, 0.219) 0.8%,
+      rgba(38, 38, 38, 0.9) 84%
+    ),
+    url('images/awesome.PNG');
 }
