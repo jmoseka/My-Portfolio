@@ -532,22 +532,9 @@ This should come before section main heading according to stylint checker */
   background: rgba(0, 0, 0, 0.712);
 }
 
-
-.project-others img {
-  background:
-    linear-gradient(
-      179.35deg,
-      rgba(199, 30, 30, 0) 0.85%,
-      rgba(129, 10, 10, 0.9) 84%,
-      url('./images/leaderboard.PNG')
-    );
-}
-
 .project-others:hover {
   transform: scale(1.01);
 }
-
-
 
 .project-post h2 {
   font-family: "Crete Round", serif;
@@ -574,7 +561,7 @@ This should come before section main heading according to stylint checker */
   float: left;
   padding: 0.5rem;
   margin: 0.1rem;
-  background: rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.24);
   cursor: pointer;
   font-family: "Inter", sans-serif;
   font-style: normal;
