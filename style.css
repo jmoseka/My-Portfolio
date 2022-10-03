@@ -706,7 +706,7 @@ This should come before section main heading according to stylint checker */
   margin: 100px 50px 0 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer-text-box {
@@ -840,6 +840,14 @@ label {
   line-height: 24px;
   text-align: center;
   color: red;
+}
+
+.footer-contact {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 50px;
+  color: var(--blue);
 }
 
 /* MEDIA QUERIES */
@@ -1096,7 +1104,6 @@ label {
 
   .footer-block {
     flex-direction: column;
-    align-items: center;
     margin: 100px 24px 0 24px;
   }
 
