@@ -10,8 +10,8 @@ const modalCloseBtn = document.querySelector('.modal-close');
 const projectBtn = document.querySelectorAll('.see-project');
 
 // Validate email
-const form = document.querySelector('#contact-form');
-const inputEmail = document.querySelector('#email');
+// const form = document.querySelector('#contact-form');
+// const inputEmail = document.querySelector('#email');
 const alert = document.querySelector('.alert');
 
 const projects = {
@@ -69,14 +69,6 @@ const projects = {
     image: 'images/landing.png',
     liveDemoLink: 'https://sad-shirley-6aae5c.netlify.app/',
     gitLink: 'https://github.com/jmoseka/Landing-Page',
-  },
-  project7: {
-    title: 'TECHINAL DOCUMENTATION',
-    desc: 'A technical documentation website',
-    technologies: ['html', 'css'],
-    image: 'images/doc.png',
-    liveDemoLink: 'https://codepen.io/jmoseka/full/KKvoEWQ',
-    gitLink: 'https://github.com/jmoseka/Responsive-Web-Design/tree/main/Technical-Documentation',
   },
 };
 
@@ -154,15 +146,15 @@ document.onclick = (e) => {
 };
 
 // error message
-function alertMsg(msg) {
-  alert.classList.remove('hidden');
-  alert.textContent = msg;
-}
+// function alertMsg(msg) {
+//   alert.classList.remove('hidden');
+//   alert.textContent = msg;
+// }
 
-form.addEventListener('submit', (e) => {
-  const lowerCaseReg = /[a - z]/;
-  if (lowerCaseReg.test(inputEmail.value) === false) {
-    alertMsg('Please use small letters for email address');
-    e.preventDefault();
-  }
-});
+// form.addEventListener('submit', (e) => {
+//   const lowerCaseReg = /[a - z]/;
+//   if (lowerCaseReg.test(inputEmail.value) === false) {
+//     alertMsg('Please use small letters for email address');
+//     e.preventDefault();
+//   }
+// });
