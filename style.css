@@ -571,8 +571,8 @@ This should come before section main heading according to stylint checker */
 
 .project-post ul li {
   float: left;
-  padding: 10px;
-  margin-right: 12px;
+  padding: 0.5rem;
+  margin: 0.1rem;
   background: rgba(255, 255, 255, 0.24);
   cursor: pointer;
   font-family: "Inter", sans-serif;
