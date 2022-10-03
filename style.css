@@ -517,41 +517,36 @@ This should come before section main heading according to stylint checker */
   background:
     linear-gradient(
       179.35deg,
-      rgba(22, 22, 22, 0.342) 0.8%,
+      rgba(22, 22, 22, 0.219) 0.8%,
       rgba(38, 38, 38, 0.9) 84%
     ),
-    url("images/img-3.png");
+    url("images/meals-app.PNG");
   height: 400px;
 }
 
 .project-post {
   margin: 0 16px 0 16px;
+  padding: 0.5rem;
   color: white;
-  height: 300px;
+  background: rgba(0, 0, 0, 0.712);
 }
 
-.project-post:hover {
-  animation: cardAnim 1s ease 0s 1 normal forwards;
-}
-
-@keyframes cardAnim {
-  0% {
-    transform: scale(0.5);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
 
 .project-others img {
   background:
     linear-gradient(
       179.35deg,
       rgba(199, 30, 30, 0) 0.85%,
-      rgba(129, 10, 10, 0.9) 84%
+      rgba(129, 10, 10, 0.9) 84%,
+      url('./images/leaderboard.PNG')
     );
 }
+
+.project-others:hover {
+  transform: scale(1.01);
+}
+
+
 
 .project-post h2 {
   font-family: "Crete Round", serif;
@@ -565,7 +560,7 @@ This should come before section main heading according to stylint checker */
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
   margin: 24px 0 24px 0;
 }
