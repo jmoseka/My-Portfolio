@@ -2,6 +2,7 @@
 
 # Portfolio
 
+
 > This project builds a personal porfolio site to showcase some of the projects that I do. 
 
 ## Built With
@@ -80,7 +81,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you lie this project!
 
 ## 📝 License
 
